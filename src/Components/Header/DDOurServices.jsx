@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const MobileDropDownServices = () => {
+
+const DDOurServices = ({ setServicesHover }) => {
   const nav = useNavigate();
-  const handleServices = (val: string) => {
+  const handleServices = (val) => {
     if (val === "/storage") {
       nav("/storage");
     } else if (val === "/offshore") {
@@ -14,7 +15,7 @@ const MobileDropDownServices = () => {
     }
   };
   return (
-    <div className="ddAboutUs" >
+    <div className="ddAboutUs" onMouseLeave={() => setServicesHover(false)}>
       <p className="ddAboutUsText" onClick={() => handleServices("/offshore")}>
         Offshore Intake/Offtake Facilities
       </p>
@@ -25,6 +26,6 @@ const MobileDropDownServices = () => {
       <p className="ddAboutUsText" onClick={() => handleServices("/lhs")}>Logistics & Haulage Services</p>
     </div>
   );
-}
+};
 
-export default MobileDropDownServices
+export default DDOurServices;
