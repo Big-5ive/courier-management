@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import Login from "./Auth/Login/Login";
 import LandingPage from "./Pages/Home/LandingPage/LandingPage";
 import Container from "./Container/Container";
+import Track from "./Pages/Track/Track";
 
 const route = createHashRouter([
   {
@@ -13,6 +14,10 @@ const route = createHashRouter([
       {
         path: "/",
         element: <LandingPage />,
+      },
+      {
+        path: "/track",
+        element: <Track />,
       },
     ],
   },

@@ -71,6 +71,10 @@ const Header = () => {
       nav("/contact")
     }
   }
+
+  const handleTrack = ()=>{
+    nav('/track')
+  }
   return (
     <>
       <div
@@ -83,6 +87,13 @@ const Header = () => {
           </div>
           <div className="headerNavs">
             <p className="headerNavsText" onClick={()=>handleNav("/")}>Home</p>
+            <p
+              className="headerNavsText aboutUsHover"
+              onClick={handleTrack}
+            >
+              Track
+              
+            </p>
             <p
               className="headerNavsText aboutUsHover"
               onMouseOver={handleAbout}
