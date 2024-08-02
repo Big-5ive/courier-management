@@ -1,7 +1,7 @@
 import React from 'react'
 // import './allpackage.css'
 import Home from '../home/Home'
-import Package1 from '../../Components/packae/Package1'
+import Package1 from '../../Components/packae/PackageEdit'
 
 const Allpackages = () => {
   return (

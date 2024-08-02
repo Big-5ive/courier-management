@@ -7,7 +7,7 @@ const WhoWeAre = () => {
         <div className="HeroPageWrapperLeft max-[700px]:w-full ">
           <div className="HeroPageLeftSideUp">
             <img
-              src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Our-Core-Values2.jpg"
+              src="https://media.istockphoto.com/id/1430750860/photo/wooden-blocks-with-words-ethics-respect-honesty-and-integrity-business-culture-and-code-of.webp?b=1&s=170667a&w=0&k=20&c=xCqLtcHFD9udk3hvx14hSHRBpfcLLGl3ZKrEXMqKK0I="
               alt=""
             />
           </div>
@@ -23,7 +23,7 @@ const WhoWeAre = () => {
                 </div>
               </div>
               <p>
-                  To become the dominant downstream oil and gas player in Africa.
+                our vision is to be the leading provider of innovative and efficient delivery solutions that connect people and businesses globally.
               </p>
             </div>
             <div className="MiddleSide">
@@ -36,10 +36,7 @@ const WhoWeAre = () => {
                 </div>
               </div>
               <p>
-                “We play a lead role in petroleum product trading, marketing and
-                distribution in Africa, through a well structured and strategic
-                channel that delivers unbeatable pricing and efficiency of
-                service.”.
+              our mission is to provide unparalleled delivery services that prioritize speed, reliability, and customer satisfaction.
               </p>
             </div>
             <div className="MiddleSide">
@@ -52,14 +49,13 @@ const WhoWeAre = () => {
                 </div>
               </div>
               <p>
-                We are driven by the “Pinnacle Spirit” which is highly resilient
-                and optimistic about Africa’s economic future.
+              our philosophy is centered around a commitment to excellence, innovation, and customer-centricity. We believe that every delivery is more than just a package; it’s a promise of trust, reliability, and care.
               </p>
             </div>
           </div>
           <div className="HeroPageLeftSideUp">
             <img
-              src="https://pinnacleoilandgas.com/wp-content/uploads/2021/03/Vision.jpg"
+              src="https://media.istockphoto.com/id/1431570827/photo/cargo-plane-flying-above-stack-of-containers-at-container-port.webp?b=1&s=170667a&w=0&k=20&c=hyfjs1Dhnd0n0CEtY070jkENwY21TC-ADgdwvjPxPM4="
               alt=""
             />
           </div>
@@ -83,10 +79,9 @@ const WhoWeAre = () => {
                   </div>
                 </div>
                 <p>
-                  At Pinnacle, our word is our bond. That is why we value
-                  transparency and honesty in all we do. We measure ourselves
-                  against the highest standards of integrity and fiscal
-                  responsibility.
+                At Asian Pacific Express, integrity is the foundation of everything we do. We believe in 
+                conducting our business with honesty, transparency, and ethical practices, ensuring that 
+                trust and reliability are at the forefront of our relationships with customers, partners, and employees.
                 </p>
               </div>
               <div className="HeroRightMidSide">
@@ -103,7 +98,7 @@ const WhoWeAre = () => {
                 </div>
                 <p>
                   We are constantly developing and implementing new ideas. To
-                  ensure our products and services remain top tier in a fast
+                  ensure our services remain top tier in a fast
                   paced and changing environment, our minds are always
                   conditioned towards innovative ways to reshape operations and
                   create enormous value
@@ -122,12 +117,10 @@ const WhoWeAre = () => {
                   </div>
                 </div>
                 <p>
-                  The foundation of Pinnacle’s success is its people. Our code
-                  is “driven by innovation, sustained by people”. In line with
-                  this, we ensure everyone is a part of the internal movement.
-                  With over 9 active departments, our team spirit keeps us all
-                  geared towards one goal, one mission, one vision and one
-                  strategic objective.
+                At Asian Pacific Express, our team spirit is the heartbeat of our success. 
+                We believe that a united and motivated team is essential for delivering 
+                exceptional service and achieving our goals. Our collaborative and inclusive 
+                culture fosters a sense of belonging and empowers every team member to contribute their best.
                 </p>
               </div>
               <div className="HeroRightMidSide">
@@ -143,12 +136,9 @@ const WhoWeAre = () => {
                   </div>
                 </div>
                 <p>
-                  We believe customer satisfaction is not just an event, or an
-                  isolated action, it is our culture and our professional
-                  ideology. We aim at meeting and exceeding customers’
-                  expectations in all aspects of our business, without
-                  compromising on quality, which is why our solutions, products
-                  and services are the best.
+                At Asian Pacific Express, our customers are at the heart of everything we do. We are dedicated 
+                to delivering services that not only meet but exceed your expectations, ensuring that your 
+                experience with us is as smooth and satisfying as possible
                 </p>
               </div>
               <div className="HeroRightMidSide">
@@ -164,14 +154,9 @@ const WhoWeAre = () => {
                   </div>
                 </div>
                 <p>
-                  Pinnacle is committed to providing a healthy and safe work
-                  environment for its workers. We ensure compliance with all
-                  health and environmental safety standards. To express that
-                  commitment, we have taken adequate steps to ensure care for
-                  safety, health and environment is articulated and considered
-                  in all our operations. To this end, we adhere strictly to all
-                  safety regulations in line with the Oil and Gas Industry’s
-                  standards and the international standards.
+                At Asian Pacific Express, we are deeply committed to the well-being of both 
+                our communities and our planet. Our dedication to health and environmental 
+                sustainability guides our operations and drives our efforts to make a positive impact.
                 </p>
               </div>
             </div>
@@ -196,7 +181,7 @@ const WhoWeAre = () => {
               </div>
               <div className="Right">
                 <h1>GLOBAL CERTIFICATE</h1>
-                <p>ISO 9001:2015</p>
+                <p>ISO 2010</p>
               </div>
             </div>
           </div>

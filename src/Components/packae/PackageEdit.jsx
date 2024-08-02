@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './package.css'
 import { FaRegEdit } from "react-icons/fa";
 import { MdOutlineDelete } from "react-icons/md";
-
+import EditPackageCont from '../editpackage/changePackage';
 import PackageDetail from '../packagedetail/packagedetail';
 import DeletePackagecont from '../deletecomp/Deletepackage';
 
@@ -30,7 +30,7 @@ const Package1 = () => {
             {
                 editPackage ? 
                 <div className="editpackageholder">
-                    <EditPackage close={handleEditPackage}/>
+                    <EditPackageCont close={handleEditPackage}/>
                 </div> : 
                 packageDetail ? 
                 <div className="editpackageholder">

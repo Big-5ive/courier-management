@@ -58,7 +58,7 @@ const ContactUs = () => {
                 name=""
                 id=""
               ></textarea>
-              <p className="submit">Submit</p>
+              <button className="submit">SUBMIT</button>
             </div>
           </div>
         </div>

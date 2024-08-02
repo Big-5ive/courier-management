@@ -9,29 +9,29 @@ const Storage = () => {
                     <div className="storagepics">
                         <div className="picturehold">
                             <div className="real">
-                                <img src="https://pinnacleoilandgas.com/wp-content/uploads/2021/05/Warri-Storage-Terminal-1.jpg" alt="" />
+                                <img src="https://plus.unsplash.com/premium_photo-1693236731045-5148457c0491?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VhcG9ydCUyMG9mZmljZSUyMGluJTIwc2hhbmdhaXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
                             </div>
                         </div>
                         <div className="picturehold">
                             <div className="real">
-                                <img src="https://pinnacleoilandgas.com/wp-content/uploads/2021/05/Warri-Storage-Terminal-2-1536x922.jpg" alt="" />
+                                <img src="https://plus.unsplash.com/premium_photo-1661875638674-18fe9b042828?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VhcG9ydCUyMG9mZmljZSUyMGluJTIwc2hhbmdhaXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
                             </div>
                         </div>
                     </div>
                     <div className="storagewrite">
                         <div className="write">
-                            <h1>Warri Storage Terminal</h1>
+                            <h1 style={{fontSize: "20px"}}>358 East Daming Road Shanghai, Shanghai 200080. China</h1>
                             <p>
-                                As part of our strategy of ensuring continued availability of the various petroleum products, we operate a 100,000MT storage terminal and jetty in Warri, adjacent the Warri Refinery.
+                            At Asian Pacific Express, we understand the importance of both availability and scalability in delivering exceptional service. Our commitment to these principles ensures that we meet your needs effectively, no matter how dynamic or demanding your requirements may be.
                             </p>
                             <p>
-                                The storage facility is designed to store a wide range of products, including PMS, JET A1, AGO, DPK and BASE OIL. The tanks are interchangeable, allowing significant product flexibility, and have floating roofs, greatly reducing evaporation and air pollution from volatile emissions from the storage area.
+                            We prioritize availability to ensure that our services are accessible whenever you need them. Our robust infrastructure and dedicated team work around the clock to provide reliable support and timely solutions. Whether it's during peak times or off-hours, we are here to assist you and ensure seamless operations.
                             </p>
                             <p>
-                                To ensure efficient product load out, the facility is equipped with a Truck loading Island for Gas Oil, Gasoline, JET A1, Base Oil and DPK. Each load out facility is equipped with multiple loading arms each capable of loading 120m3 of petroleum products per hour.
+                            Our services are designed with scalability in mind, allowing us to adapt to your changing needs with ease. Whether you require a small-scale solution or a large-scale deployment, our flexible systems and processes can scale up or down to match your requirements. This adaptability ensures that we can efficiently handle fluctuations in demand and deliver consistent performance.
                             </p>
                             <p>
-                                There is also a Truck park bay, for the efficient management of truck traffic. In line with the requirements of the law, we also have modern office facilities for the administration of operations as well as for the housing of key regulatory agencies legally required to be located in all product terminals.
+                            Our customer support team is always ready to respond quickly and effectively to your needs. We are committed to providing prompt assistance and resolving any issues that may arise, ensuring that you receive the support you need without delay.
                             </p>
                         </div>
                     </div>
@@ -40,19 +40,19 @@ const Storage = () => {
             <div className="others">
                 <div className="othershold">
                     <div className="actualothers">
-                        <p>Offshore Intake/ Offtake Facilities</p>
+                        <p>Fast</p>
                         <div className="iconhold"></div>
                     </div>
                     <div className="actualothers">
-                        <p>Storage Facilities</p>
+                        <p>Reliable</p>
                         <div className="iconhold"></div>
                     </div>
                     <div className="actualothers">
-                        <p>Petroleum Product Marketing</p>
+                        <p>Efficient</p>
                         <div className="iconhold"></div>
                     </div>
                     <div className="actualothers">
-                        <p>Logistics & Haulage Services</p>
+                        <p>24/7 customer service</p>
                         <div className="iconhold"></div>
                     </div>
                 </div>
