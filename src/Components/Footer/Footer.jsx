@@ -1,4 +1,4 @@
-import "../../Style/footer.css"
+import "../../Style/footer.css";
 const Footer = () => {
   return (
     <div className="footer__container">
@@ -8,10 +8,14 @@ const Footer = () => {
             <div className="footer__title">About</div>
             <div className="footer__content">
               <a href="/company" className="footer__content--text">
-               Our Company
+                Our Company
               </a>
-              <a href="/whoWeAre" className="footer__content--text">Who We Are</a>
-              <a href="/whatWeDo" className="footer__content--text">What we Do</a>
+              <a href="/whoWeAre" className="footer__content--text">
+                Who We Are
+              </a>
+              <a href="/whatWeDo" className="footer__content--text">
+                What we Do
+              </a>
             </div>
           </div>
 
@@ -19,16 +23,16 @@ const Footer = () => {
             <div className="footer__title">Our Service</div>
             <div className="footer__content">
               <a href="/lhs" className="footer__content--text">
-              Logistics & Haulage Services
+                Logistics & Haulage Services
               </a>
               <a href="/offshore" className="footer__content--text">
-              Offshore Intake/Offtake Facilities
+                Offshore Intake/Offtake Facilities
               </a>
               <a href="/ppm" className="footer__content--text">
-              Petroleum Product Marketing
+                Petroleum Product Marketing
               </a>
               <a href="/storage" className="footer__content--text">
-              Storage Terminal Facilities
+                Storage Terminal Facilities
               </a>
               {/* <p className="footer__content--text"></p> */}
             </div>
@@ -37,22 +41,18 @@ const Footer = () => {
           <div className="footer__top--container">
             <div className="footer__title">Support</div>
             <div className="footer__content">
-              <a href="/privacy&policy" className="footer__content--text">Contact Us</a>
+              <a href="/privacy&policy" className="footer__content--text">
+                Contact Us
+              </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}
             </div>
           </div>
         </div>
         <div className="footer__down">
           <a href="/" className="footer__logo">
-          <div className="headerh3" onClick={() => handleNav("/")}>
-              {/* Asian Pacific Express */}
-            <img src="/icons/APE.png" alt="" />
-
+            <div className="headerh3" onClick={() => handleNav("/")}>
+              <img src="/icons/APE.png" alt="" />
             </div>
-            {/* <img
-              src="https://translang.axiomthemes.com/wp-content/uploads/2017/03/logo.png"
-              className="Mainheaderlogoimag"
-            /> */}
           </a>
         </div>
         <div className="footer__footer">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -20,13 +20,13 @@ const Track = () => {
                 Track
               </button>
             </div>
-            {/* <div className="bg-gray-50 p-4 border border-gray-300 rounded-md flex items-center">
+            <div className="bg-gray-50 p-4 border border-gray-300 rounded-md flex items-center">
             <FaInfoCircle className="text-2xl text-gray-500 mr-2" />
             <div>
               <p className="font-bold">123</p>
               <p>The tracking code is invalid. Please check your tracking number.</p>
             </div>
-          </div> */}
+          </div>
           </div>
         </div>
        <div className="w-[90%] bg-red-700 overflow-auto ">
