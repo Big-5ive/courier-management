@@ -10,6 +10,7 @@
   background-color: transparent;
   backdrop-filter: blur(5px);
   font-family: inter;
+  display: none;
 }
 
 .burgerMenu__cancelIcon {
@@ -71,4 +72,10 @@
 .burgerMenu__getStarted:hover {
   background-color: #df6412d5;
   color: #fff !important;
+}
+
+@media screen and (max-width:1024px) {
+  .burgerMenu {
+    display: flex;
+  }
 }

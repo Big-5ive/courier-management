@@ -16,52 +16,54 @@ const ContactUs = () => {
       </div>
 
       <div className="GetInTouchContainer">
-      <div className="GetInTouchWrapper">
-        <div className="GetInTouchLeft">
-          <div className="GetInTouchLeftWrapper">
-            <h1 className="GetInTouchTitle">Get In Touch</h1>
-            <p className="GetInTouchParagraphs"></p>
-            <p className="GetInTouchParagraphs"></p>
-            <p className="GetInTouchParagraphs"></p>
+        <div className="GetInTouchWrapper">
+          <div className="GetInTouchLeft">
+            <div className="GetInTouchLeftWrapper">
+              <h1 className="GetInTouchTitle">Get In Touch</h1>
+              <p className="GetInTouchParagraphs"></p>
+              <p className="GetInTouchParagraphs"></p>
+              <p className="GetInTouchParagraphs"></p>
+            </div>
           </div>
-        </div>
-        <div className="GetInTouchRight">
-          <div className="GetInTouchRightWrapper">
-            <div className="GetInTouchInputContainer">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="GetInTouchInput"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="GetInTouchInput"
-              />
+          <div className="GetInTouchRight">
+            <p className="mb-5 GetInTouchTitle1">Get in Touch</p>
+            <div className="GetInTouchRightWrapper">
+              <div className="GetInTouchInputContainer">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="GetInTouchInput"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  className="GetInTouchInput"
+                />
+              </div>
+              <div className="GetInTouchInputContainer">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="GetInTouchInput"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="GetInTouchInput"
+                />
+              </div>
+              <textarea
+                className="GetInTouchTextArea"
+                placeholder="Type Your Message Here..."
+                name=""
+                id=""
+              ></textarea>
+              <p className="submit">Submit</p>
             </div>
-            <div className="GetInTouchInputContainer">
-              <input
-                type="text"
-                placeholder="Email"
-                className="GetInTouchInput"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="GetInTouchInput"
-              />
-            </div>
-            <textarea
-              className="GetInTouchTextArea"
-              placeholder="Type Your Message Here..."
-              name=""
-              id=""
-            ></textarea>
-            <button className="submit">SUBMIT</button>
           </div>
         </div>
       </div>
-      </div>
+      
     </>
   );
 };

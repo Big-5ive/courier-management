@@ -17,7 +17,7 @@ const DDOurServices = ({ setServicesHover }) => {
   return (
     <div className="ddAboutUs" onMouseLeave={() => setServicesHover(false)}>
       <p className="ddAboutUsText" onClick={() => handleServices("/offshore")}>
-        Offshore Intake/Offtake Facilities
+        Offshore Intake/Offtake Facilities1
       </p>
       <p className="ddAboutUsText" onClick={() => handleServices("/storage")}>
         Storage Facilities{" "}

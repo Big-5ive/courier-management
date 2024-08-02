@@ -1,4 +1,4 @@
-import "../../Style/footer.css"
+import "../../Style/footer.css";
 const Footer = () => {
   return (
     <div className="footer__container">
@@ -8,7 +8,13 @@ const Footer = () => {
             <div className="footer__title">About</div>
             <div className="footer__content">
               <a href="/company" className="footer__content--text">
-               Our Company
+                Our Company
+              </a>
+              <a href="/whoWeAre" className="footer__content--text">
+                Who We Are
+              </a>
+              <a href="/whatWeDo" className="footer__content--text">
+                What we Do
               </a>
               {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}
               <a href="/whatWeDo" className="footer__content--text">What we Do</a>
@@ -37,7 +43,9 @@ const Footer = () => {
           <div className="footer__top--container">
             <div className="footer__title">Support</div>
             <div className="footer__content">
-              <a href="/privacy&policy" className="footer__content--text">Contact Us</a>
+              <a href="/privacy&policy" className="footer__content--text">
+                Contact Us
+              </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}
             </div>
           </div>
@@ -56,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

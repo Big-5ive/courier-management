@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./offshore.css";
+import Storage from "./Storage";
 
 const OffshoreIntake = () => {
+  const nav = useNavigate();
   return (
     <>
       <div className="offshoreWrap">
@@ -55,27 +58,8 @@ const OffshoreIntake = () => {
           </div>
         </main>
       </div>
-      <div className="getintouch">
-        <div className="intouch">
-          <div className="info">
-            <p>DON'T HESITATE TO CONTACT US</p>
-            <h1>For better future and business, Let’s get started now!</h1>
-            <span>
-              We provide innovative products & services for sustainable
-              progress.
-            </span>
-            <span>
-              Our professional team works to increase productivity and cost
-              effectiveness on the market.
-            </span>
-            <button>Get in Touch</button>
-          </div>
-        </div>
-        <img
-          src="https://media.istockphoto.com/id/1710190963/photo/fuel-tanker-truck-waiting-to-load-at-a-loading-dock-with-all-the-streets-occupied-by-other.webp?b=1&s=170667a&w=0&k=20&c=wwgiMX7_4NLGOXC72aiRZ8llEMYi6z0ps-5nozwNvWc="
-          alt=""
-        />
-      </div>
+      <Storage />
+
     </>
   );
 };

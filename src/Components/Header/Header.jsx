@@ -1,7 +1,5 @@
 import { useRef, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import DropDown from "./DDAboutUs";
-import DDOurServices from "./DDOurServices";
 import HeaderBurgerPopUp from "./HeaderBurgerPopUp";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
@@ -26,10 +24,6 @@ const Header = () => {
   const navigate = useNavigate();
   const dropdownRef = useRef(null);
   const timeoutRef = useRef(null);
-
-  const handleProfileClick = () => {
-    navigate("/login");
-  };
 
   const handleMouseDown = (e) => {
     const dropdown = dropdownRef.current;
@@ -96,9 +90,11 @@ const Header = () => {
       >
         <div className="headerWrapper">
           <div className="headerLogo">
-            <h3 className="headerh3" onClick={() => handleNav("/")}>
-              Asian Pacific Express
-            </h3>
+            <div className="headerh3" onClick={() => handleNav("/")}>
+              {/* Asian Pacific Express */}
+            <img src="/icons/APE.png" alt="" />
+
+            </div>
           </div>
           <div className="headerNavs">
             <p className="headerNavsText" onClick={() => handleNav("/")}>
@@ -134,7 +130,6 @@ const Header = () => {
               <FaUser
                 className="text-[#FF6600] cursor-pointer"
                 size={24}
-                onClick={handleProfileClick}
               />
               {showDropdown && (
                 <div
@@ -146,14 +141,14 @@ const Header = () => {
                   <p className="text-gray-600">
                     Welcome to Asian Pacific Express!
                   </p>
-                  <button
+                  {/* <button
                     onClick={handleProfileClick}
                     className="bg-[#FF6600] text-white py-2 px-4 rounded-md w-full my-2"
                   >
                     Sign In
-                  </button>
+                  </button> */}
                   <p className="text-center my-2 text-gray-600">
-                    Or, continue with:
+                    continue with:
                   </p>
                   <div className="flex justify-center space-x-4 my-2">
                     <FaGoogle className="cursor-pointer text-xl text-gray-700" />

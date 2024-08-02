@@ -1,6 +1,6 @@
 import "./WhoWeAre.css";
 
-const WhoWeAre: React.FC = () => {
+const WhoWeAre = () => {
   return (
     <div className="heropage max-[700px]:h-max">
       <div className="HeroPageWrapper max-[700px]:flex-col max-[700px]:h-max  ">

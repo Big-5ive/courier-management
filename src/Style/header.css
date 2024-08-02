@@ -27,6 +27,7 @@
   font-size: 23px;
   font-weight: 700;
   cursor: pointer;
+  width: 140px;
 }
 
 .headerNavs {
@@ -84,7 +85,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .headerContainer {
     height: 75px;
   }

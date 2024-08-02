@@ -6,7 +6,7 @@ import { MdOutlineDelete } from "react-icons/md";
 import PackageDetail from '../packagedetail/packagedetail';
 import DeletePackagecont from '../deletecomp/Deletepackage';
 
-const Package = () => {
+const Package1 = () => {
     const [editPackage, setEditPackage] = useState(false)
     // const [editValue, setEditValue] = useState ("")
     const [deleteOption, setDeleteOption] = useState(false)
@@ -64,4 +64,4 @@ const Package = () => {
   )
 }
 
-export default Package
+export default Package1
