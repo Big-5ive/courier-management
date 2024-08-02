@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./offshore.css";
 
 const OffshoreIntake = () => {
+  const nav = useNavigate();
   return (
     <>
       <div className="offshoreWrap">
@@ -87,7 +89,7 @@ const OffshoreIntake = () => {
               Our professional team works to increase productivity and cost
               effectiveness on the market.
             </span>
-            <button>Get in Touch</button>
+            <button onClick={()=> nav("/contact")}>Get in Touch</button>
           </div>
         </div>
         <img

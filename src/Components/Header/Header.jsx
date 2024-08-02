@@ -97,7 +97,9 @@ const Header = () => {
         <div className="headerWrapper">
           <div className="headerLogo">
             <h3 className="headerh3" onClick={() => handleNav("/")}>
-              Asian Pacific Express
+              {/* Asian Pacific Express */}
+            <img src="/icons/APE.png" alt="" />
+
             </h3>
           </div>
           <div className="headerNavs">

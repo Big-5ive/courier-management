@@ -46,14 +46,14 @@
     width: 85%;
     height: 100%;
     display: flex;
-}
+  }
 
 .GetInTouchLeft {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3e3c3e;
+  background-color: #df6512;
 }
 
 .GetInTouchLeftWrapper {
@@ -74,6 +74,16 @@
   color: #fff;
 }
 
+.GetInTouchTitle1 {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* color: #111111; */
+  color: #363636;
+}
+
 .GetInTouchParagraphs {
   font-size: 16px;
   font-weight: 400;
@@ -86,6 +96,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   /* background-color: green; */
 }
 
@@ -94,7 +105,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
   gap: 20px;
 }
 
@@ -110,7 +120,7 @@
   border: none;
   outline: none;
   padding-left: 8px;
-  border-bottom: 2px solid #3e3c3e;
+  border-bottom: 2px solid #df6512;
   color: #111111;
   background-color: transparent;
 }
@@ -121,11 +131,52 @@
   border: none;
   outline: none;
   padding-left: 8px;
-  border-bottom: 2px solid #3e3c3e;
+  border-bottom: 2px solid #df6512;
   color: #111111;
   background-color: transparent;
 }
 
 .submit {
   font-size: 22px;
+}
+
+@media screen and (max-width:700px) {
+  .GetInTouchWrapper{
+    width: 100%;
+  }
+  .GetInTouchLeft {
+    display: none;
+  }
+
+  .GetInTouchRight {
+    width: 100%;
+  }
+
+  .GetInTouchInputContainer{
+    flex-direction: column;
+  }
+
+  .GetInTouchInput {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .GetInTouchWrapper{
+    width: 100%;
+  }
+  .GetInTouchLeft {
+    display: none;
+  }
+
+  .GetInTouchRight {
+    width: 100%;
+  }
+
+  .GetInTouchTitle1 {
+    display: block;
+    font-size: 25px;
+  }
+
 }
