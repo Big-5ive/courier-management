@@ -1,10 +1,10 @@
 .ddAboutUs{
+    position: absolute;
     width: 230px;
     height: 150px;
     background-color: #fff;
-    position: absolute;
     z-index: 2;
-    top: 40px;
+    top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +19,6 @@
     font-weight: 400;
 }
 
-.ddAboutUsText:hover{
+/* .ddAboutUsText:hover{
     color: rgb(223, 101, 18);
-}
+} */

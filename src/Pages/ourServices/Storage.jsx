@@ -1,7 +1,7 @@
 import React from 'react'
 import './StorageFacilities.css'
 
-const Storage: React.FC = () => {
+const Storage = () => {
     return(
         <div className="storageWrap">
             <div className="storage">

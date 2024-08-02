@@ -1,9 +1,10 @@
 import "./Company.css";
+import WhoWeAre from "./WhoWeAre";
 // import worker from "../../src/assets/worker.jpg"
 
 const Company = () => {
   return (
-    
+    <>
       <div className="wholebody">
         <div className="body">
           <div className="bodyleft">
@@ -61,7 +62,8 @@ const Company = () => {
           </div>
         </div>
       </div>
-    
+      <WhoWeAre />
+    </>
   );
 };
 
