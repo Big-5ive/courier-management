@@ -44,7 +44,11 @@ const Footer = () => {
         </div>
         <div className="footer__down">
           <a href="/" className="footer__logo">
-            <p className="speedyTrans__newLogo headerh3">Rigrail Oil & Gas</p>
+          <div className="headerh3" onClick={() => handleNav("/")}>
+              {/* Asian Pacific Express */}
+            <img src="/icons/APE.png" alt="" />
+
+            </div>
             {/* <img
               src="https://translang.axiomthemes.com/wp-content/uploads/2017/03/logo.png"
               className="Mainheaderlogoimag"

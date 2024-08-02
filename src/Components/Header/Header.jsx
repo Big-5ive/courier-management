@@ -96,11 +96,11 @@ const Header = () => {
       >
         <div className="headerWrapper">
           <div className="headerLogo">
-            <h3 className="headerh3" onClick={() => handleNav("/")}>
+            <div className="headerh3" onClick={() => handleNav("/")}>
               {/* Asian Pacific Express */}
             <img src="/icons/APE.png" alt="" />
 
-            </h3>
+            </div>
           </div>
           <div className="headerNavs">
             <p className="headerNavsText" onClick={() => handleNav("/")}>
