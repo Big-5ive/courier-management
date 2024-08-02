@@ -52,11 +52,7 @@ const Footer = () => {
         </div>
         <div className="footer__down">
           <a href="/" className="footer__logo">
-            <p className="speedyTrans__newLogo headerh3">Asian Pacific Express</p>
-            {/* <img
-              src="https://translang.axiomthemes.com/wp-content/uploads/2017/03/logo.png"
-              className="Mainheaderlogoimag"
-            /> */}
+            <p style={{fontSize: "25px", fontWeight: "700"}}>Asian Pacific Express</p>
           </a>
         </div>
         <div className="footer__footer">
