@@ -1,11 +1,11 @@
 import React from 'react'
 // import './allpackage.css'
 import Home from '../home/Home'
-import Package from '../../components/packae/package'
+import Package1 from '../../Components/packae/Package1'
 
 const Allpackages = () => {
   return (
-      <Home one={"blue"} name={"All packages"} props={<Package />}/>
+      <Home one={"blue"} name={"All packages"} props={<Package1 />}/>
   )
 }
 
