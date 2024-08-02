@@ -4,7 +4,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdOutlineDelete } from "react-icons/md";
 import EditPackageCont from '../editpackage/changePackage';
 import PackageDetail from '../packagedetail/packagedetailcomp';
-import DeletePackagecont from '../deletecomp/Deletepackage';
+import DeletePackagecont from '../deletecomp/Deletepackaging';
 
 const Package1 = () => {
     const [editPackage, setEditPackage] = useState(false)

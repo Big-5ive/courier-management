@@ -11,7 +11,7 @@ const Home = ({props, one, two, three, name}) => {
       <div className="adminhold">
         <div className="adminHead">
           <div className="headloggo">
-            <img src="./logo1.png" alt="loggo" />
+            Asian express admin
           </div>
           <div className="headnav">
             {/* {name} */}

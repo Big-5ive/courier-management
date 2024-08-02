@@ -46,7 +46,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    color: white;
+    
+    /* background-color: white; */
 }
 .headloggo img{
     width: 90%;
