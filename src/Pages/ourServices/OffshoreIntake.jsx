@@ -10,48 +10,30 @@ const OffshoreIntake = () => {
             <p>Offtake Facilities</p>
             <p id="pp"></p>
           </div>
-          <img src="https://media.istockphoto.com/id/1418267717/photo/aerial-panorama-of-a-cargo-ship-carrying-container-for-import-and-export.jpg?s=612x612&w=0&k=20&c=pjaI0YCs52ZMfNJU-xrihAsOYR_rrH2vunXYjFGwPdA=" />
+          <img src="./ship.jpg" />
         </div>
         <main className="main">
           <div className="writeupwrap">
             <div className="writeup">
-              <p>
-                In line with our pioneering mentality and our innovative
-                approach to business, we have identified the huge inefficiencies
-                in the Nigerian Oil and Gas Industry, and have taken adequate
-                steps to bridge these gaps, by the development of one of
-                Africa’s largest offshore Petroleum intake/offtake and storage
-                terminals to provide compelling Logistic advantages to the
-                entire oil and gas value chain.
-              </p>
-              <p>
-                The facility comprises a world class Single Point Mooring (SPM)
-                and Conventional Buoy Mooring (CBM). These facilities can
-                receive up to 150,000 DWT vessels, with the ability to discharge
-                up to 100,000 MT of petroleum products within 48hours. The
-                facilities have full terminal automation and radar gauging
-                systems, built with the highest safety standards.
-              </p>
-              <p>
-                To facilitate efficient load out of products, we have extensive
-                truck gantries with sufficient loading arms to fill and dispatch
-                up to 600 trucks daily. In addition, the facility will give
-                operators access to purpose-built truck parking in the Freezone,
-                reduced time for truck loading and direct access to artery roads
-                leading to the East and North.
-              </p>
-              <p>
-                The Facility is located within the Lekki Free Trade Zone, giving
-                operators and users the advantage of numerous fiscal and
-                economic incentives.
-              </p>
+              
+              At Asian Pacific Express, we offer a wide range of delivery solutions, tailored to meet your needs. Whether you’re sending a single document or managing a complex supply chain, we ensure your packages are in safe and reliable hands.
+
+              For urgent deliveries, our Same-Day Delivery service guarantees your packages arrive within hours, perfect for critical documents and time-sensitive items. Our Next-Day Delivery service provides a balance of speed and cost-efficiency, ensuring prompt delivery the next day.
+
+              Our International Shipping services expand your reach globally, navigating customs and regulations to ensure your packages arrive safely and on time. For large shipments, our Freight Services offer flexible options, including air, sea, and road freight, handling bulky and heavy items with care.
+
+              Stay informed with our Real-Time Tracking, monitoring your shipment’s journey from pick-up to delivery. Our Custom Logistics Solutions cater to your specific needs, including warehousing and inventory management, streamlining your operations.
+
+              Security is our priority, with our team handling all packages with care to ensure they arrive in perfect condition. In critical situations, our Emergency Service ensures rapid and reliable delivery.
+
+              We provide value with our Affordable Delivery options, offering competitive pricing without compromising on quality. Our dedicated customer care team is always ready to assist, providing personalized service and support for a smooth delivery experience.
             </div>
           </div>
           <div className="picswrap">
             <div className="pics">
               <div className="picimg">
                 <div className="imgwrap">
-                  <h3>Offshore intake/ Offtake Facilities</h3>
+                  <h3>Asian Pacific Express</h3>
                   <div className="actualimg">
                     <img
                       src="https://media.istockphoto.com/id/1404380618/photo/truck-at-night-on-the-road.webp?b=1&s=170667a&w=0&k=20&c=axrdD6HxrFOxi3ruXatz8H_vwiMyzwlddaBIfxzIIwY="
@@ -61,12 +43,11 @@ const OffshoreIntake = () => {
                 </div>
                 <div className="table">
                   <ul className="custom">
-                    <li>Offshore intake/Office Facilities</li>
-                    <li>Storage Facilities</li>
-                    <li>Petroleum Products Marketing</li>
-                    <li>Logistics & Haulage Services</li>
-                    <li>Pinacle Gold Card</li>
-                    <li>Pinacle Fuel Card</li>
+                    <li>International Shipping</li>
+                    <li>Freight Services</li>
+                    <li>Real-Time Tracking</li>
+                    <li>Custom Logistic Solutions</li>
+                    <li>Affordable Delivery</li>
                   </ul>
                 </div>
               </div>

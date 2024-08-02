@@ -10,7 +10,7 @@ const Footer = () => {
               <a href="/company" className="footer__content--text">
                Our Company
               </a>
-              <a href="/whoWeAre" className="footer__content--text">Who We Are</a>
+              {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}
               <a href="/whatWeDo" className="footer__content--text">What we Do</a>
             </div>
           </div>
@@ -19,16 +19,16 @@ const Footer = () => {
             <div className="footer__title">Our Service</div>
             <div className="footer__content">
               <a href="/lhs" className="footer__content--text">
-              Logistics & Haulage Services
+                International shipping
               </a>
               <a href="/offshore" className="footer__content--text">
-              Offshore Intake/Offtake Facilities
+                Freight services
               </a>
               <a href="/ppm" className="footer__content--text">
-              Petroleum Product Marketing
+                Real time tracking
               </a>
               <a href="/storage" className="footer__content--text">
-              Storage Terminal Facilities
+                Custom logistic solutions
               </a>
               {/* <p className="footer__content--text"></p> */}
             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className="footer__down">
           <a href="/" className="footer__logo">
-            <p className="speedyTrans__newLogo headerh3">Rigrail Oil & Gas</p>
+            <p className="speedyTrans__newLogo headerh3">Asian Pacific Express</p>
             {/* <img
               src="https://translang.axiomthemes.com/wp-content/uploads/2017/03/logo.png"
               className="Mainheaderlogoimag"
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__footer">
-          <p className="footer__footer--text">© 2023 Rigrail Oil & Gas.</p>
+          <p className="footer__footer--text">© 2024 Asian Pacific Express.</p>
         </div>
       </div>
     </div>

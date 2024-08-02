@@ -11,12 +11,9 @@ const SecondSection = () => {
           </div>
           <div className="secondSectionWriteup">
             <p className="secondSectionWriteupContent">
-              We offer one of the largest offshore liquid bulk terminals
-              (SPM/CBM) in Africa to provide efficient discharge of products for
-              operators, complemented by world class storage facilities and
-              retail outlets/channels in all six geopolitical zones in Nigeria.
-              We continually develop strategic infrastructure to facilitate the
-              operational efficiency of our integrated bouquet of services
+              we offer a comprehensive range of delivery solutions tailored to meet 
+              your unique needs. Whether you're sending a single document or managing 
+              complex logistics, we've got you covered.
             </p>
           </div>
         </div>
@@ -24,38 +21,38 @@ const SecondSection = () => {
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Offshore-Intake-Offtake-Facilities1.jpg"
+                src="./plane.jpg"
                 alt=""
               />
             </div>
-            <a href="/offshore" className="secondSectionPicture1Btn">Offshore intake/offtake Facilities</a>
+            <a href="/offshore" className="secondSectionPicture1Btn">International Shipping</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Storage-Facilities1.jpg"
+                src="https://media.istockphoto.com/id/1177117400/photo/coworkers-rushing-to-load-packages-in-a-delivery-van.webp?b=1&s=170667a&w=0&k=20&c=XCUyc34UIARk0eRjBWkIIseX9Q2UNxOB3TS6wSQ5bag="
                 alt=""
               />
             </div>
-            <a href="/storage" className="secondSectionPicture1Btn">Storage Facilities</a>
+            <a href="/storage" className="secondSectionPicture1Btn"> Freight Services</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Petroleum-Product-Service-Stations1.jpg"
+                src="https://media.istockphoto.com/id/1287828123/photo/modern-courier-delivery-at-home-shopogolic-and-online-shopping.webp?b=1&s=170667a&w=0&k=20&c=fm-LrOeEmJ4U2HINSSLG9F4mHoPLtsU-x-TKL1ePuy8="
                 alt=""
               />
             </div>
-            <a href="ppm" className="secondSectionPicture1Btn">Petroleum Service Station</a>
+            <a href="ppm" className="secondSectionPicture1Btn">Real-Time Tracking</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Haulage-Services1.jpg"
+                src="https://images.unsplash.com/photo-1492168732976-2676c584c675?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZ2lzdGljc3xlbnwwfHwwfHx8MA%3D%3D"
                 alt=""
               />
             </div>
-            <a href="lhs" className="secondSectionPicture1Btn">Logistics & Haulage Services</a>
+            <a href="lhs" className="secondSectionPicture1Btn">Custom Logistics Solutions</a>
           </div>
         </div>
       </div>

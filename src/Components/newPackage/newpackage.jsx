@@ -32,7 +32,7 @@ const NewPackage = () => {
     <form action="" onSubmit={handleSubmit}>
     <div className='newpackageparent'>
       <div className="title">
-        <p>create a new package</p>
+        <p style={{fontFamily: "Poppins"}}>create a new package</p>
       </div>
       <div className="newpackageHold">
         <div className="packageinputHold">

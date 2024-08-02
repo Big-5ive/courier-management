@@ -47,17 +47,17 @@ const ThirdSection = () => {
     <div className="thirdSectionContainer" id="price">
       <div className="thirdSectionWrapper">
         <div className="thirdSectionformContainer">
-          <h1 className="thirdSectionFormTitle">Bulk Order</h1>
+          <h1 className="thirdSectionFormTitle">Start your delevery process here</h1>
           <form action="" method="post" className="thirdSectionForm">
             <div className="thirdSectionFormName">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="First Name"
                 onChange={(e) => setFullName(e.target.value)}
               />
               <input
                 type="text"
-                placeholder="Company Name"
+                placeholder="Last Name"
                 onChange={(e) => setCompanyName(e.target.value)}
               />
             </div>
@@ -79,32 +79,33 @@ const ThirdSection = () => {
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
-            <select
+            {/* <select
               className="thirdSectionFormInput"
               name=""
               id=""
               onChange={handleProductType}
             >
-              <option value="Select Product Type" disabled>
-                Select Product Type
+              <option value="">
+                Select delevery type 
               </option>
               <option value="Offshore intake/offtake Facilities">
                 Offshore intake/offtake Facilities
               </option>
               <option value="Storage Facilities">Storage Facilities</option>
+              
               <option value="Petroleum Service Station">
                 Petroleum Service Station
               </option>
               <option value="Logistics & Haulage Services">
                 Logistics & Haulage Services
               </option>
-            </select>
+            </select> */}
             {/* <select className="thirdSectionFormInput" name="" id="">
               <option value="How Many Litres?">How Many Litres?</option>
             </select> */}
             <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
               <p className="thirdSectionFormBtn rounded font-medium" onClick={handleOrderNow}>
-                ORDER NOW
+                DONE
               </p>
             </div>
           </form>
@@ -113,24 +114,26 @@ const ThirdSection = () => {
         <div className="thirdSectionExposure">
           <div className="thirdSectionFeatures">
             <p className="thirdSectionFeaturesContent">
-              <span style={{ color: "#ff9900" }}>★ &nbsp;</span>
+              <span style={{ color: "#ff9900" }}>★★★★★ &nbsp;</span>
               Quality Driven
             </p>
             <p className="thirdSectionFeaturesContent">
-              <span style={{ color: "#ff9900" }}>★★ &nbsp;</span>
+              <span style={{ color: "#ff9900" }}>★★★★★ &nbsp;</span>
               Customer Focused
             </p>
             <p className="thirdSectionFeaturesContent">
-              <span style={{ color: "#ff9900" }}>★★★ &nbsp;</span>
+              <span style={{ color: "#ff9900" }}>★★★★★ &nbsp;</span>
               Global Sourcing
             </p>
           </div>
           <h1 className="thirdSectionFeaturesHeader">
-            Leading the downstream oil & gas industry in Nigeria since 2004
+            We've navigated countless miles and delivered millions of packages, 
+            earning a reputation for reliability and excellence that stands the 
+            test of time.
           </h1>
           <p className="thirdSectionFeaturesdesc">
-            We service global clients, in more than 20 countries in Africa & in
-            Nigeria.
+            We service global clients, in more than 20 countries in Europe & in
+            USA.
           </p>
           <div className="thirdSectionCardsContainer">
             <div className="thirdSectionCard">
@@ -142,10 +145,9 @@ const ThirdSection = () => {
                 />
               </div>
               <div className="thirdSectionCardRight">
-                <p className="thirdSectionCardRightHeader">Next Day Delivery</p>
+                <p className="thirdSectionCardRightHeader">Short Time Delivery</p>
                 <p className="thirdSectionCardRightContent">
-                  At Pinnacle Oil and Gas Company, 92% of our orders are
-                  successfully delivered within 24 hours
+                Our Short Time Delivery service ensures your urgent packages arrive quickly and safely.
                 </p>
               </div>
             </div>
@@ -159,8 +161,8 @@ const ThirdSection = () => {
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Low Prices</p>
                 <p className="thirdSectionCardRightContent">
-                  Our aim is to buy fuel at the lowest price possible and pass
-                  the savings on to you.
+                Our Affordable Delivery service ensures your packages arrive on time, every time, 
+                at prices that won’t stretch your budget.
                 </p>
               </div>
             </div>
@@ -170,11 +172,10 @@ const ThirdSection = () => {
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">
-                  Dedicated Account Managers
+                  24/7 Customer care
                 </p>
                 <p className="thirdSectionCardRightContent">
-                  We will assign you an account manager who will be your point
-                  of contact from day one.
+                  Our dedicated customer care team is always ready to assist, ensuring a smooth and hassle-free experience from start to finish
                 </p>
               </div>
             </div>
@@ -184,11 +185,10 @@ const ThirdSection = () => {
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">
-                  Same Day Emergency Delivery
+                  Emergency service
                 </p>
                 <p className="thirdSectionCardRightContent">
-                  At Pinnacle Oil and Gas Company, 92% of our orders are
-                  successfully delivered within 24 hours
+                We handle urgent requests with priority, ensuring your crucial packages reach their destination quickly and securely, no matter the situation.
                 </p>
               </div>
             </div>

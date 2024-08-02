@@ -6,11 +6,11 @@ const ContactUs = () => {
       <div className="ContactheroContainer">
         <img
           className="AboutheroImage"
-          src="https://pinnacleoilandgas.com/wp-content/uploads/2021/03/11-Banner.jpg"
+          src="./shipcon.jpg"
           alt=""
         />
         <div className="AboutheroText">
-          <h3 className="AboutheroIntro">Contact Us</h3>
+          <h3 className="AboutheroIntro">Contact Us Now</h3>
 
         </div>
       </div>
@@ -57,7 +57,7 @@ const ContactUs = () => {
               name=""
               id=""
             ></textarea>
-            <p className="submit">Submit</p>
+            <button className="submit">SUBMIT</button>
           </div>
         </div>
       </div>

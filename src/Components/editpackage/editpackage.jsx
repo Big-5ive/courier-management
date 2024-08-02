@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './editpackage.css'
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-const EditPackage = ({close}) => {
+const EditPackageCont = ({close}) => {
     // const [closeData, setCloseData] = useState(close)
     const handleClose = () => {
         close(false)
@@ -110,4 +110,4 @@ const EditPackage = ({close}) => {
   )
 }
 
-export default EditPackage
+export default EditPackageCont

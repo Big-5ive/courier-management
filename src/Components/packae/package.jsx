@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './package.css'
 import { FaRegEdit } from "react-icons/fa";
 import { MdOutlineDelete } from "react-icons/md";
-import EditPackage from '../editpackage/editpackage';
+
 import PackageDetail from '../packagedetail/packagedetail';
-import DeletePackagecont from '../deletecomp/deletepackage';
+import DeletePackagecont from '../deletecomp/Deletepackage';
 
 const Package = () => {
     const [editPackage, setEditPackage] = useState(false)

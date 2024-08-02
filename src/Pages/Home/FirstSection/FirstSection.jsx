@@ -6,21 +6,22 @@ const FirstSection = () => {
       <div className="firstSecWrapper">
         <div className="firstSecLeft">
           <p className="firstSecLeftTitle">
-            Welcome to Pinnacle Oil & Gas Ltd.
+            Welcome to Asian Pacific Express.
           </p>
           <p className="firstSecLeftHeader">
-            We are a Leading Downstream Oil & Gas Company in Nigeria
+            we pride ourselves on being more than just a delivery company
           </p>
           <p className="firstSecLeftText">
-            Pinnacle is an Indigenous Oil and Gas Company active across the
-            entire downstream value chain, with emphasis on the petroleum
-            trading, marketing, distribution and retail segments of the Nigerian
-            Oil and Gas Sector.
+            we're a trusted partner in your logistics journey. Founded on 
+            the principles of reliability, speed, and exceptional customer 
+            service, we have been committed to connecting people and businesses 
+            through our comprehensive delivery solutions
           </p>
           <p className="firstSecLeftText">
-            The company was founded in 2004 with Head Quarters in Lagos, one of
-            Africa’s largest business hubs. Our performance within the sector
-            has resulted in significant growth in market share and customers…
+            Our dedicated team of professionals works tirelessly to ensure that every 
+            package, no matter how big or small, is handled with the utmost care and 
+            urgency. With cutting-edge technology and a customer-centric approach, we 
+            provide real-time tracking, secure handling, and timely deliveries to meet your unique needs.
           </p>
           <div className="firstSecLeftBtn">More About Us</div>
         </div>
@@ -33,18 +34,18 @@ const FirstSection = () => {
               />
             </div>
             <div className="firstSecRightContBtn">
-              Petroleum Product Importation
+              Reliability
             </div>
           </div>
           <div className="firstSecRightCont">
             <div className="firstSecRightContimg">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/1-Petroleum-Product-Marketing.jpg"
+                src="./plane2.jpg"
                 alt=""
               />
             </div>
             <div className="firstSecRightContBtn">
-              Petroleum Product Marketing
+              Efficiency
             </div>
           </div>
         </div>

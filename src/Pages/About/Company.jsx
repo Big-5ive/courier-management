@@ -9,7 +9,7 @@ const Company = () => {
           <div className="bodyleft">
             <div className="bodyleftimage">
               <img
-                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/03/Pinnacle-Oil-Gas-Limited.jpg"
+                src="https://media.istockphoto.com/id/1396631734/photo/female-warehouse-worker-scanning-packages-at-storage-compartment.webp?b=1&s=170667a&w=0&k=20&c=Mrk4q_vuBirJbCG-BB9BShUjpKKFde7wvnypAwW0HIA="
                 alt=""
               />
             </div>
@@ -21,39 +21,26 @@ const Company = () => {
                 <div className="dash"></div>
               </div>
               <div className="pinnacle">
-                <h1>Rigrail Oil and Gas Limited</h1>
-                <span>ISO 9001, 2015 certified company.</span>
+                <h1>Asian Pacific Express</h1>
+                <span>ISO, 2010 certified company.</span>
               </div>
               <div className="writeupholder">
                 <div className="writeup">
                   <span>
-                    {" "}
-                    Rigrail Oil and Gas Limited Company active across
-                    the entire downstream value chain, with emphasis on the
-                    petroleum trading, marketing, distribution and retail
-                    segments of the Nigerian Oil and Gas Sector.{" "}
-                  </span>
+                      At Asian Pacific Express, we pride ourselves on being more than just a delivery 
+                      company—we're a trusted partner in your logistics journey. Founded on the principles 
+                      of reliability, speed, and exceptional customer service, we have been committed to 
+                      connecting people and businesses through our comprehensive delivery solutions.
 
-                  <span>
-                    The company was founded in 2004 with Head Quarters in Lagos,
-                    one of Africa’s largest business hubs. Our performance
-                    within the sector has resulted in significant growth in
-                    market share and customers.
-                  </span>
+                      Our dedicated team of professionals works tirelessly to ensure that every package, no 
+                      matter how big or small, is handled with the utmost care and urgency. With cutting-edge 
+                      technology and a customer-centric approach, we provide real-time tracking, secure handling, 
+                      and timely deliveries to meet your unique needs.
 
-                  <span>
-                    We focus on creating long term value through excellent
-                    service delivery and customer satisfaction, while ensuring
-                    quality and constructive partnerships with our various
-                    stakeholders.
-                  </span>
-
-                  <span>
-                    We are continuously evolving to ensure that access to our
-                    products and services is seamless, cost effective and safe.
-                    We are highly driven to be recognized as market leaders the
-                    Nigerian Oil and Gas Sector. We are renown for integrity,
-                    our passion for excellence and sustainable growth
+                      We believe in making a difference, one delivery at a time. Whether it's a last-minute 
+                      gift, essential documents, or large freight, we is here to ensure your 
+                      parcels reach their destination safely and efficiently. Trust us to deliver your world, one 
+                      package at a time.
                   </span>
                 </div>
               </div>

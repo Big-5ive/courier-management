@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(35, 43, 167);
     /* background-color: yellow; */
     position: absolute;
 }
