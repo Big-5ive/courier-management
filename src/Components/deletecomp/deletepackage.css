@@ -1,0 +1,62 @@
+.deletepopparent{
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.deletealert{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+.alertcomnt{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+.alerthold{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* background-color: gray; */
+}
+.alertholdbutton{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: yellowgreen; */
+}
+.alertholdbutton button{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: orangered;
+}
+#nott{
+    background-color: white;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+@media screen and (width < 900px) {
+    .alerthold{
+        width: 100%;
+    }
+    .alertholdbutton button{
+        width: 30%;
+    }
+}

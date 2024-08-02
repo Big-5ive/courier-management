@@ -1,0 +1,41 @@
+.blockuserparent{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    background-color: white;
+}
+.usercontainer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* cursor: pointer; */
+    /* background-color: yellowgreen; */
+}
+.choseUser{
+    width: 100%;
+    height: 70px;
+}
+#block{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    outline: none;
+}
+.blockbutton{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.blockbutton button{
+    width: 50%;
+    height: 80%;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}

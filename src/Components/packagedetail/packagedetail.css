@@ -1,0 +1,48 @@
+.packagedetailparent{
+    width: 100%;
+    height: max-content;
+}
+.detailbody{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detailbodyinfo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: yellowgreen; */
+}
+.detailbodyinfo div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.detailbodyinfo p{
+    color: blue;
+}
+
+@media screen and (width < 900px) {
+    .detailbody{
+        gap: 0;
+    }
+    .detailbodyinfo{
+        height: max-content;
+        width: 100%;
+        flex-direction: column;
+    }
+    .detailbodyinfo div{
+        width: 100%;
+        height: 70px;
+    }
+}

@@ -4,6 +4,9 @@ import { Toaster } from "react-hot-toast";
 import Login from "./Auth/Login/Login";
 import LandingPage from "./Pages/Home/LandingPage/LandingPage";
 import Container from "./Container/Container";
+import Allpackages from "./Pages/allpackage/allpackage";
+import CreatePackage from "./Pages/createPackage/createPackage";
+import AllUser from "./Pages/alluser/alluser";
 import Track from "./Pages/Track/Track";
 import Company from "./Pages/About/Company";
 import OffshoreIntake from "./Pages/ourServices/OffshoreIntake";
@@ -39,6 +42,18 @@ const route = createHashRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "allpackage",
+    element: <Allpackages />
+  },
+  {
+    path: "createpackage",
+    element: <CreatePackage />
+  },
+  {
+    path: "blockauser",
+    element: <AllUser />
   },
 ]);
 

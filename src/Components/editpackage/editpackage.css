@@ -1,0 +1,28 @@
+.editPackageparent{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+}
+.closepack{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    font-size: 30px;
+    background-color: white;
+}
+.closepack p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (screen < 900px) {
+    .closepack{
+        gap: 0;
+        /* background-color: yellow; */
+    }
+    .closepack p{
+        font-size: 18px;
+    }
+}
