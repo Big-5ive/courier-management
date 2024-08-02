@@ -1,0 +1,230 @@
+.heropage {
+  width: 100%;
+  height: 200vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+}
+.HeroPageWrapper {
+  width: 92%;
+  height: 92%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.HeroPageWrapperLeft {
+  width: 48.5%;
+  height: 100%;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeroPageLeftSideUp {
+  width: 100%;
+  height: 31%;
+  background-color: #f2f5f7;
+}
+.HeroPageLeftSideUp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.HeroPageLeftSideMid {
+  width: 100%;
+  height: 31%;
+  background-color: #f2f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.MiddleSide {
+  width: 100%;
+  height: 30%;
+  /* background-color: green; */
+}
+.MiddleSide p {
+  width: 95%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+}
+.MiddleSideUp {
+  width: 100%;
+  height: 30px;
+  /* background-color: blue; */
+  display: flex;
+}
+.MiddleSideUpLeft {
+  width: 5%;
+  height: 100%;
+  /* background-color: black; */
+}
+.MiddleSideUpLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.MiddleSideUpRight {
+  width: 95%;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 10px;
+}
+.MiddleSideUpRight h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+}
+
+.HeroPageWrapperRight {
+  width: 48.5%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeroPageRightSideUp {
+  width: 100%;
+  height: 88%;
+  background-color: #f2f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeroPageRightSideUpWrap {
+  width: 95%;
+  height: 100%;
+  /* background-color: palevioletred; */
+}
+.HeroRightUpperSide {
+  width: 100%;
+  height: 7%;
+  /* background-color: lime; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.HeroRightUpperSide h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: rgb(0, 0, 0);
+}
+.HeroRightMidSide {
+  width: 100%;
+  height: 18%;
+  /* background-color: green; */
+}
+.HeroRightMidSide p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+}
+.HeroRightMidSideUp {
+  width: 100%;
+  height: 30px;
+  /* background-color: blue; */
+  display: flex;
+}
+.HeroRightMidSideUpLeft {
+  width: 5%;
+  height: 100%;
+  /* background-color: black; */
+}
+.HeroRightMidSideUpLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.HeroRightMidSideUpRight {
+  width: 95%;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 10px;
+}
+.HeroRightMidSideUpRight h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+}
+.HeroPageRightSideDown {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeroPageRightSideDownLeft {
+  width: 48%;
+  height: 90%;
+  background-color: #30355d;
+  border-radius: 10px;
+  display: flex;
+}
+.Left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Leftty {
+  width: 60%;
+  height: 50%;
+}
+.Leftty img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Right h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+}
+.Right p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  color: rgb(255, 255, 255);
+}
+.HeroPageRightSideDownLeft {
+  width: 48%;
+  height: 90%;
+  background-color: #30355d;
+}

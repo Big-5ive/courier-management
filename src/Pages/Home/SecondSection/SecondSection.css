@@ -1,0 +1,123 @@
+.secondSectionContainer {
+  width: 100%;
+  height: max-content;
+  margin-top: 70px;
+  background-color: #f2f5f7;
+  display: flex;
+  justify-content: center;
+  padding-block: 100px;
+}
+
+.secondSectionWrapper {
+  width: 85%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.secondSectionWriteUpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.secondSectionTitleContainer {
+  width: 30%;
+  height: max-content;
+}
+
+.secondSectionTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(223, 101, 18);
+}
+
+.secondSectionHeading {
+  color: rgb(17, 17, 17);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.secondSectionWriteup {
+  width: 70%;
+  height: max-content;
+}
+
+.secondSectionWriteupContent {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+}
+
+.secondSectionPictureContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.secondSectionPicture1 {
+  width: 23%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.secondSectionPicture1Img {
+  width: 100%;
+  height: 80%;
+}
+
+.secondSectionPicture1Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secondSectionPicture1Btn {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #121626;
+}
+
+@media screen and (max-width:700px) {
+  .secondSectionWriteUpContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .secondSectionTitleContainer {
+    width: 100%;
+  }
+  
+  .secondSectionWriteup {
+    width: 100%;
+  }
+
+
+  .secondSectionPictureContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .secondSectionPicture1 {
+    width: 100%;
+  }
+  
+  .secondSectionPicture1Img {
+    width: 100%;
+    height: 80%;
+  }
+  
+}

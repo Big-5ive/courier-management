@@ -1,0 +1,131 @@
+.ContactheroContainer{
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    /* position: absolute; */
+}
+
+.AboutheroImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.AboutheroText{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.AboutheroIntro{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+
+.GetInTouchContainer {
+  height: 60vh;
+  width: 100%;
+  /* height: max-content; */
+  display: flex;
+  justify-content: center;
+  /* z-index: 11; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.GetInTouchWrapper{
+    width: 85%;
+    height: 100%;
+    display: flex;
+}
+
+.GetInTouchLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e3c3e;
+}
+
+.GetInTouchLeftWrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.GetInTouchTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* color: #111111; */
+  color: #fff;
+}
+
+.GetInTouchParagraphs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.GetInTouchRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.GetInTouchRightWrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  gap: 20px;
+}
+
+.GetInTouchInputContainer {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.GetInTouchInput {
+  width: 50%;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+  border-bottom: 2px solid #3e3c3e;
+  color: #111111;
+  background-color: transparent;
+}
+
+.GetInTouchTextArea {
+  width: 100%;
+  height: 75px;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+  border-bottom: 2px solid #3e3c3e;
+  color: #111111;
+  background-color: transparent;
+}
+
+.submit {
+  font-size: 22px;
+}

@@ -5,6 +5,9 @@ import Login from "./Auth/Login/Login";
 import LandingPage from "./Pages/Home/LandingPage/LandingPage";
 import Container from "./Container/Container";
 import Track from "./Pages/Track/Track";
+import Company from "./Pages/About/Company";
+import OffshoreIntake from "./Pages/ourServices/OffshoreIntake";
+import ContactUs from "./Pages/Contact/ContactUs";
 
 const route = createHashRouter([
   {
@@ -18,6 +21,18 @@ const route = createHashRouter([
       {
         path: "/track",
         element: <Track />,
+      },
+      {
+        path: "/company",
+        element: <Company />,
+      },
+      {
+        path: "/offshore",
+        element: <OffshoreIntake />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
       },
     ],
   },

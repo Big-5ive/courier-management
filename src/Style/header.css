@@ -70,8 +70,11 @@
 }
 
 .HeaderMenu {
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: 43px;
   display: none;
 }
 
@@ -85,9 +88,7 @@
   .headerNavs {
     display: none;
   }
-  .headerButton {
-    display: none;
-  }
+  
 
   .HeaderMenu {
     display: flex;
