@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import "../Style/HeaderBurgerPopUp.css";
+import "../../Style/HeaderBurgerPopUp.css";
 import { ImCancelCircle } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 
-type Props = {
-  setMenuPop: React.Dispatch<React.SetStateAction<boolean>>;
-};
-const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
-  const [service, setService] = useState<string>("");
+
+const HeaderBurgerPopUp = ({ setMenuPop }) => {
+  const [service, setService] = useState("");
   console.log(service)
   const nav = useNavigate();
-  const handleNavClick = (navItem: string) => {
+  const handleNavClick = (navItem) => {
     if (navItem === "home") {
       nav("/");
       setMenuPop(false);
@@ -26,7 +24,7 @@ const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = (e) => {
     const selectedValue = e.target.value
     console.log(selectedValue);
     setService(selectedValue)

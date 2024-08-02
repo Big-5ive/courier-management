@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/DropDown.css";
+import "../../Style/DropDown.css";
 
 type Props = {
   setAboutHover: React.Dispatch<React.SetStateAction<boolean>>;

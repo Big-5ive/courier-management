@@ -1,0 +1,128 @@
+.firstSecContainer{
+    width: 100%;
+    height: max-content;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstSecWrapper{
+    width: 85%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.firstSecLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.firstSecLeftTitle{
+    color: rgb(232, 92, 0);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.firstSecLeftHeader{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(17, 17, 17);
+}
+
+.firstSecLeftText{
+    font-size: 15px;
+    font-weight: 400px;
+    word-spacing: 3px;
+}
+
+.firstSecLeftBtn{
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    background-color: #121626;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstSecRight{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.firstSecRightCont{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstSecRightContimg{
+    width: 100%;
+    height: 90%;
+}
+
+.firstSecRightContimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firstSecRightContBtn{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #df6512;
+}
+
+@media screen and (max-width:700px) {
+    .firstSecWrapper{
+        /* width: 85%;
+        height: max-content;
+        display: flex; */
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center;
+        gap: 30px; */
+    }
+
+    .firstSecLeft{
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        gap: 20px; */
+    }
+
+    .firstSecRight{
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .firstSecRightCont{
+        width: 100%;
+        height: 40vh;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .firstSecRightContimg{
+        height: 85%;
+    }
+    .firstSecRightContBtn{
+        height: 15%;
+    }
+}

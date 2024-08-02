@@ -1,0 +1,242 @@
+.wholebody {
+  width: 100%;
+  height: max-content;
+  margin-top: 75px;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+.bodyleft {
+  width: 40%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyleftimage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+.bodyleft img {
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+}
+.bodyright {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyrightholder {
+  width: 100%;
+  height: 80%;
+  /* background-color: green; */
+}
+.welcome {
+  width: 40%;
+  height: 5%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  /* color: orange; */
+  gap: 15px;
+}
+
+.welcomeH3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(223, 101, 18);
+}
+
+.dash {
+  width: 50px;
+  height: 10%;
+  background-color: #e2c60c;
+}
+.pinnacle {
+  width: 80%;
+  /* height: ; */
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  /* align-items: center; */
+}
+.pinnacle h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+}
+.pinnacle span {
+  font-weight: 900;
+  line-height: 1.5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.writeupholder {
+  width: 100%;
+  height: 85%;
+  /* background-color: pink; */
+}
+.writeup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.6;
+  text-align: justify;
+  /* background-color: black; */
+}
+
+@media screen and (width <= 1024px) {
+    .wholebody{
+        height: max-content;
+    }
+  .bodyright {
+    width: 53%;
+    height: 100%;
+    /* background-color: aqua; */
+  }
+  .welcome {
+    /* background-color: aliceblue; */
+    padding-bottom: 10px;
+  }
+  .writeup {
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    font-size: 15px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .body {
+    gap: 3px;
+  }
+  .bodyleft img {
+    width: 90%;
+    height: 60%;
+    border-radius: 5px;
+  }
+  .welcome {
+    width: 60%;
+  }
+  .pinnacle {
+    width: 95%;
+  }
+  .pinnacle h1 {
+    font-size: xx-large;
+  }
+  .writeupholder {
+    height: 100%;
+  }
+  .writeup {
+    width: 95%;
+    font-size: small;
+  }
+}
+@media screen and (width <= 701px) {
+  .body {
+    height: 230vh;
+    flex-direction: column;
+  }
+  .bodyleft {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bodyleft img {
+    height: 90%;
+    width: 75%;
+  }
+  .bodyright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bodyrightholder {
+    width: 75%;
+    height: 95%;
+  }
+  .pinnacle h1 {
+    font-size: x-large;
+  }
+  .writeupholder {
+    height: 80%;
+  }
+  .writeup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.9;
+    font-size: 15px;
+  }
+}
+@media screen and (width <= 425px) {
+  .body {
+    height: 180vh;
+    flex-direction: column;
+  }
+  .bodyleft {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bodyleft img {
+    height: 90%;
+    width: 90%;
+  }
+  .bodyright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bodyrightholder {
+    width: 90%;
+    height: 100%;
+  }
+  .pinnacle {
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .writeup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    font-size: 13px;
+    gap: 20px;
+  }
+}
