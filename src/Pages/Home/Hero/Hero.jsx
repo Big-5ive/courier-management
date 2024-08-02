@@ -3,7 +3,7 @@ import "../../../Style/hero.css";
 const Hero = () => {
  const nav = useNavigate();
   const handleNav = ()=>{
-    nav("/product")
+    nav("/track")
   }
   return (
     <div className="heroContainer">
@@ -11,7 +11,7 @@ const Hero = () => {
         <h3 className="heroIntro">One off Africa's largest offshore</h3>
         <h1 className="heroBigtext">Offshore Petroleum intake/offtake</h1>
         <p className="herosmalltext">and storage terminals...</p>
-        <div className="herobtn hover:bg-orange-400" onClick={handleNav}>Know More</div>
+        <div className="herobtn hover:bg-orange-400" onClick={handleNav}>Track Now</div>
         </div>
       <img
       className="heroImage"
