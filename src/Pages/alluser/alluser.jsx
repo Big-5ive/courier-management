@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../home/Home'
-import BlockUserCont from '../../Components/blockuser/blockuser'
+import BlockUserCont from '../../Components/blockuser/blockusercomp'
 
 const AllUser = () => {
   return (

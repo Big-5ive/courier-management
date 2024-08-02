@@ -3,7 +3,7 @@ import './package.css'
 import { FaRegEdit } from "react-icons/fa";
 import { MdOutlineDelete } from "react-icons/md";
 import EditPackageCont from '../editpackage/changePackage';
-import PackageDetail from '../packagedetail/packagedetail';
+import PackageDetail from '../packagedetail/packagedetailcomp';
 import DeletePackagecont from '../deletecomp/Deletepackage';
 
 const Package1 = () => {

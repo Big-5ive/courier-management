@@ -1,7 +1,7 @@
 import React from 'react'
 import './createPackage.css'
 import Home from '../home/Home'
-import NewPackage from '../../components/newPackage/newpackage'
+import NewPackage from '../../Components/newPackage/newpackagecomp'
 
 const CreatePackage = () => {
   return (
