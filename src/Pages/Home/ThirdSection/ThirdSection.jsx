@@ -38,6 +38,14 @@ const ThirdSection = () => {
       };
       localStorage.setItem("userInfo", JSON.stringify(userInfo));
       toast.success("Order placed successfully!");
+      setTimeout(()=>{
+        setCompanyName("")
+        setDeliveryAddress("")
+        setEmail("")
+        setFullName("")
+        setPhoneNumber("")
+        setProductType("")
+      },3000)
     } else {
       setWarning(true);
     }
@@ -90,15 +98,15 @@ const ThirdSection = () => {
                 Select delivery type 
               </option>
               <option value="Offshore intake/offtake Facilities">
-                Offshore intake/offtake Facilities
+                International 
               </option>
-              <option value="Storage Facilities">Storage Facilities</option>
+              {/* <option value="Storage Facilities">Storage Facilities</option> */}
               <option value="Petroleum Service Station">
-                Petroleum Service Station
+                National
               </option>
-              <option value="Logistics & Haulage Services">
+              {/* <option value="Logistics & Haulage Services">
                 Logistics & Haulage Services
-              </option>
+              </option> */}
             </select>
             <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
               <p className="thirdSectionFormBtn rounded font-medium" onClick={handleOrderNow}>
