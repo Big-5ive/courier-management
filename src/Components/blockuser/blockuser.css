@@ -10,11 +10,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 10px;
     /* cursor: pointer; */
     /* background-color: yellowgreen; */
 }
 .choseUser{
-    width: 100%;
+    width: 40%;
     height: 70px;
 }
 #block{
@@ -31,11 +32,25 @@
     align-items: center;
 }
 .blockbutton button{
-    width: 50%;
+    width: 20%;
     height: 80%;
     background-color: orangered;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 20px;
+}
+
+@media screen and (width < 900px) {
+    .choseUser{
+        width: 100%;
+    }
+    #block{
+        width: 80%;
+    }
+    .blockbutton button{
+        width: 80%;
+        height: 100%;
+        
+    }
 }

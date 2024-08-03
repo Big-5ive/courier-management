@@ -2,10 +2,18 @@ import React, { useState } from 'react'
 import './home.css'
 import { useNavigate } from 'react-router-dom'
 import { TiThMenu } from "react-icons/ti";
+import { FaBorderAll } from "react-icons/fa";
+import { MdCreateNewFolder } from "react-icons/md";
+import { TbStatusChange } from "react-icons/tb";
+import { SlLogout } from "react-icons/sl";
 
 const Home = ({props, one, two, three, name}) => {
   const [burgerMenu, setBurgerMenu] = useState(false)
   const nav = useNavigate()
+
+  const handleLogOut = () => {
+    localStorage.removeItem("")
+  }
   return (
     <div className='adminparent'>
       <div className="adminhold">
@@ -40,22 +48,25 @@ const Home = ({props, one, two, three, name}) => {
               nav("/allpackage")
               setBurgerMenu(false)
             }}>
-              <TiThMenu />
+              <FaBorderAll />
               <p>All Packages</p>
             </div>
             <div className="menulog" onClick={()=> {
               nav("/createpackage")
               setBurgerMenu(false)
             }}>
-              <TiThMenu />
+              <MdCreateNewFolder />
               <p>Create a package</p>
             </div>
-            <div className="menulog" onClick={()=> nav("/blockauser")}>
-              <TiThMenu />
+            <div className="menulog" onClick={()=> {
+              nav("/blockauser")
+              setBurgerMenu(false)
+              }}>
+              <TbStatusChange />
               <p>Change user ststus</p>
             </div>
             <div className="menulog">
-              <TiThMenu />
+              <SlLogout />
               <p>Log out</p>
             </div>
           </div>

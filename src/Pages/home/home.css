@@ -113,14 +113,23 @@
     width: 100%;
     min-height: 100vh;
     background-color: white;
+    box-shadow: -20px 2px 64px 0px rgba(0,0,0,0.63);
+-webkit-box-shadow: -20px 2px 64px 0px rgba(0,0,0,0.63);
+-moz-box-shadow: -20px 2px 64px 0px rgba(0,0,0,0.63);
 }
 
 @media screen and (width < 900px ) {
+    .adminbody{
+        box-shadow: none;
+    }
     .adminhold{
         width: 100%;
     }
     .headnav{
-        width: 70%;
+        width: 50%;
+    }
+    .headloggo{
+        width: 30%;
     }
     .headnav div{
         display: none;
