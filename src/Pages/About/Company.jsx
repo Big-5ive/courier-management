@@ -29,14 +29,14 @@ const Company = () => {
                   At Asian Pacific Express, we pride ourselves on being more than just a delivery 
                   company—we're a trusted partner in your logistics journey. Founded on the principles 
                   of reliability, speed, and exceptional customer service, we have been committed to 
-                  connecting people and businesses through our comprehensive delivery solutions.
+                  connecting people and businesses through our comprehensive delivery solutions.</p>
 
-                  Our dedicated team of professionals works tirelessly to ensure that every package, no 
+                  <p>Our dedicated team of professionals works tirelessly to ensure that every package, no 
                   matter how big or small, is handled with the utmost care and urgency. With cutting-edge 
                   technology and a customer-centric approach, we provide real-time tracking, secure handling, 
-                  and timely deliveries to meet your unique needs.
+                  and timely deliveries to meet your unique needs.</p>
 
-                  We believe in making a difference, one delivery at a time. Whether it's a last-minute 
+                  <p>We believe in making a difference, one delivery at a time. Whether it's a last-minute 
                   gift, essential documents, or large freight, we is here to ensure your 
                   parcels reach their destination safely and efficiently. Trust us to deliver your world, one 
                   package at a time.

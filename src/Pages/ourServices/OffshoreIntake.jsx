@@ -18,18 +18,30 @@ const OffshoreIntake = () => {
         <main className="main">
           <div className="writeupwrap">
             <div className="writeup">
-              
-              At Asian Pacific Express, we offer a wide range of delivery solutions, tailored to meet your needs. Whether you’re sending a single document or managing a complex supply chain, we ensure your packages are in safe and reliable hands.
-
-              For urgent deliveries, our Same-Day Delivery service guarantees your packages arrive within hours, perfect for critical documents and time-sensitive items. Our Next-Day Delivery service provides a balance of speed and cost-efficiency, ensuring prompt delivery the next day.
-
-              Our International Shipping services expand your reach globally, navigating customs and regulations to ensure your packages arrive safely and on time. For large shipments, our Freight Services offer flexible options, including air, sea, and road freight, handling bulky and heavy items with care.
-
-              Stay informed with our Real-Time Tracking, monitoring your shipment’s journey from pick-up to delivery. Our Custom Logistics Solutions cater to your specific needs, including warehousing and inventory management, streamlining your operations.
-
-              Security is our priority, with our team handling all packages with care to ensure they arrive in perfect condition. In critical situations, our Emergency Service ensures rapid and reliable delivery.
-
-              We provide value with our Affordable Delivery options, offering competitive pricing without compromising on quality. Our dedicated customer care team is always ready to assist, providing personalized service and support for a smooth delivery experience.
+              At Asian Pacific Express, we offer a wide range of delivery
+              solutions, tailored to meet your needs. Whether you’re sending a
+              single document or managing a complex supply chain, we ensure your
+              packages are in safe and reliable hands. For urgent deliveries,
+              our Same-Day Delivery service guarantees your packages arrive
+              within hours, perfect for critical documents and time-sensitive
+              items. Our Next-Day Delivery service provides a balance of speed
+              and cost-efficiency, ensuring prompt delivery the next day. Our
+              International Shipping services expand your reach globally,
+              navigating customs and regulations to ensure your packages arrive
+              safely and on time. For large shipments, our Freight Services
+              offer flexible options, including air, sea, and road freight,
+              handling bulky and heavy items with care. Stay informed with our
+              Real-Time Tracking, monitoring your shipment’s journey from
+              pick-up to delivery. Our Custom Logistics Solutions cater to your
+              specific needs, including warehousing and inventory management,
+              streamlining your operations. Security is our priority, with our
+              team handling all packages with care to ensure they arrive in
+              perfect condition. In critical situations, our Emergency Service
+              ensures rapid and reliable delivery. We provide value with our
+              Affordable Delivery options, offering competitive pricing without
+              compromising on quality. Our dedicated customer care team is
+              always ready to assist, providing personalized service and support
+              for a smooth delivery experience.
             </div>
           </div>
           <div className="picswrap">
@@ -59,7 +71,6 @@ const OffshoreIntake = () => {
         </main>
       </div>
       <Storage />
-
     </>
   );
 };
