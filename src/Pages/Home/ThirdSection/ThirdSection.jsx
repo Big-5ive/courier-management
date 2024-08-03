@@ -126,11 +126,11 @@ const ThirdSection = () => {
               Global Sourcing
             </p>
           </div>
-          <h1 className="thirdSectionFeaturesHeader">
+          <h3 className="thirdSectionFeaturesHeader">
             We've navigated countless miles and delivered millions of packages, 
             earning a reputation for reliability and excellence that stands the 
             test of time.
-          </h1>
+          </h3>
           <p className="thirdSectionFeaturesdesc">
             We service global clients, in more than 20 countries in Europe & in
             USA.

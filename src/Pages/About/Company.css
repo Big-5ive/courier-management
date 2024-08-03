@@ -126,14 +126,25 @@
 }
 
 @media screen and (width <= 768px) {
+  .wholebody {
+    margin-top: 0px;
+  }
+
   .body {
     gap: 3px;
+    margin-top: 20px;
   }
-  .bodyleft img {
-    width: 90%;
-    height: 60%;
+  .bodyleftimage img {
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
   }
+  .bodyleftimage{
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+  }
+
   .welcome {
     width: 60%;
   }
@@ -163,10 +174,10 @@
     justify-content: center;
     align-items: center;
   }
-  .bodyleft img {
+  /* .bodyleft img {
     height: 90%;
     width: 75%;
-  }
+  } */
   .bodyright {
     width: 100%;
     height: 100%;
@@ -196,10 +207,7 @@
   }
 }
 @media screen and (width <= 425px) {
-  .body {
-    height: 180vh;
-    flex-direction: column;
-  }
+
   .bodyleft {
     width: 100%;
     height: 100%;

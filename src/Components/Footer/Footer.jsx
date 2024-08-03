@@ -10,14 +10,13 @@ const Footer = () => {
               <a href="/company" className="footer__content--text">
                 Our Company
               </a>
-              <a href="/whoWeAre" className="footer__content--text">
+              <a href="/company" className="footer__content--text">
                 Who We Are
               </a>
-              <a href="/whatWeDo" className="footer__content--text">
+              <a href="/company" className="footer__content--text">
                 What we Do
               </a>
               {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}
-              <a href="/whatWeDo" className="footer__content--text">What we Do</a>
             </div>
           </div>
 

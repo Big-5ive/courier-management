@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./FirstSection.css";
 
 const FirstSection = () => {
@@ -23,7 +24,7 @@ const FirstSection = () => {
             urgency. With cutting-edge technology and a customer-centric approach, we 
             provide real-time tracking, secure handling, and timely deliveries to meet your unique needs.
           </p>
-          <div className="firstSecLeftBtn">More About Us</div>
+          <div className="firstSecLeftBtn"><Link to="/company">More About Us</Link></div>
         </div>
         <div className="firstSecRight">
           <div className="firstSecRightCont">

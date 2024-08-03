@@ -228,3 +228,29 @@
   height: 90%;
   background-color: #30355d;
 }
+
+
+@media screen and (max-width:764px) {
+.HeroRightMidSideUp {
+  margin: 10px 0;
+}
+
+  .HeroPageRightSideDown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  flex-direction: column;
+  gap: 10px;
+  }
+  .HeroPageRightSideDownLeft{
+    width: 300px;
+    padding: 6px;
+  }
+  .Right h1 {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  .Right p {
+    font-size: 16px;
+  }
+}
