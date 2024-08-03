@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ContactUs.css';
+import ScrollToTop from '../../Components/ScrollToTop';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -50,6 +51,7 @@ const ContactUs = () => {
   return (
     <>
       <ToastContainer />
+      <ScrollToTop />
       <div className="ContactheroContainer">
         <img
           className="AboutheroImage"

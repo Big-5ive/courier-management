@@ -1,9 +1,11 @@
+import ScrollToTop from "../../Components/ScrollToTop";
 import "./Company.css";
 import WhoWeAre from "./WhoWeAre";
 
 const Company = () => {
   return (
     <>
+    <ScrollToTop />
       <div className="company">
         <div className="company__container">
           <div className="company__left">
