@@ -11,7 +11,7 @@ const Package1 = () => {
     const [editPackage, setEditPackage] = useState(false)
     const [deleteOption, setDeleteOption] = useState(false)
     const [packageDetail, setPackageDetail] = useState(false)
-    const [allPackage, setAllpackage] = useState()
+    const [allPackage, setAllpackage] = useState([])
     const [loading, setLoading] = useState(false)
     const [singlePackage, setSinglePackage] = useState()
     const [editId, setEditId] = useState()
@@ -65,7 +65,8 @@ const Package1 = () => {
         fetchData();
       }, []);
 
-      const newPackage = [...allPackage].reverse()
+      const newPackage = [...allPackage]?.reverse()
+    //   console.log("pack",allPackage)
   return (
     <div className='packageParent'>
         <div className="allpackagehold">
