@@ -12,6 +12,9 @@ const HeaderBurgerPopUp = ({ setMenuPop }) => {
     if (navItem === "home") {
       nav("/");
       setMenuPop(false);
+    } else if (navItem === "track") {
+      nav("/track");
+      setMenuPop(false);
     } else if (navItem === "about") {
       nav("/company");
       setMenuPop(false);
@@ -32,6 +35,7 @@ const HeaderBurgerPopUp = ({ setMenuPop }) => {
       <div className="burgerMenu__content--container">
         <div>Welcome to Asian Pacific Express </div>
         <p onClick={() => handleNavClick("home")}>Home</p>
+        <p onClick={() => handleNavClick("track")}>Track</p>
         <p onClick={() => handleNavClick("about")}>About Us</p>
         <p onClick={() => handleNavClick("services")}>Our Sevices</p>
         <p onClick={() => handleNavClick("contact")}>Contact Us</p>
