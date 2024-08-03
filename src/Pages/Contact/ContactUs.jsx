@@ -6,9 +6,14 @@ const ContactUs = () => {
       <div className="ContactheroContainer">
         <img
           className="AboutheroImage"
-          src="./shipcon.jpg"
+          src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/8-Banner-1.jpg"
           alt=""
         />
+        {/* <img
+          className="AboutheroImage"
+          src="./shipcon.jpg"
+          alt=""
+        /> */}
         <div className="AboutheroText">
           <h3 className="AboutheroIntro">Contact Us Now</h3>
 
