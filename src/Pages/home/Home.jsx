@@ -12,7 +12,7 @@ const Home = ({props, one, two, three, name}) => {
   const nav = useNavigate()
 
   const handleLogOut = () => {
-    localStorage.c
+    localStorage.removeItem("")
   }
   return (
     <div className='adminparent'>
