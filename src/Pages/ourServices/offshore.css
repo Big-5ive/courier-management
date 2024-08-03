@@ -242,10 +242,6 @@
     height: 250px;
   }
 
-  .hero img {
-    object-fit: contain;
-  }
-
   .writebox {
     width: 100%;
     left: 0;
