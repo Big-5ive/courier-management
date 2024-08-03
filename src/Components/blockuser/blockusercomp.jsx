@@ -23,7 +23,7 @@ const BlockUserCont = () => {
           try {
             const response = await axios.get(url, { headers });
             // setData(response.data);
-            console.log(response)
+            // console.log(response)
             setAllUsers(response?.data.data)
             setLoading(false)
           } catch (error) {
