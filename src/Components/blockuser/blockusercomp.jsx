@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './blockuser.css'
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { TfiReload } from "react-icons/tfi";
 
 const BlockUserCont = () => {
     const [loading, setLoading] = useState(false)
     const [loading2, setLoading2] = useState(false)
     const [allUsers, setAllUsers] = useState()
-    const [userId, setUserId] = useState()
+    const [userId, setUserId] = useState("")
     const [status, setStatus] = useState("")
 
     useEffect(() => {
@@ -22,7 +23,7 @@ const BlockUserCont = () => {
           try {
             const response = await axios.get(url, { headers });
             // setData(response.data);
-            // console.log(response)
+            console.log(response)
             setAllUsers(response?.data.data)
             setLoading(false)
           } catch (error) {
@@ -36,10 +37,10 @@ const BlockUserCont = () => {
 
       const handleUpdate = async(e) => {
         setLoading2(true)
-        if(!userId){
-            setLoading2(false)
-            toast.error("pls select a user")
-        } else{
+        // if(!userId){
+        //     setLoading2(false)
+        //     toast.error("pls select a user")
+        // } else{
         e.preventDefault()
         // const id = pacid.packageId
         const url = `https://asianpacificexpress-api.onrender.com/admin-status/${userId}`
@@ -48,39 +49,41 @@ const BlockUserCont = () => {
         const headers = {
           'Authorization' : `Bearer ${token}`
         }
-  
         const statusData = {
             status: status
         }
   
         try {
           const response = await axios.put(url, statusData, { headers });
-          console.log('Response:', response.data);
+        //   console.log('Response:', response.data);
           toast.success("status updated added")
           setLoading2(false)
         } catch (error) {
-          console.error('Error:', error);
-          // console.error('id:', id);
+        //   console.error('Error:', error);
+        //   console.error('id:', userId._id);
           setLoading2(false)
           toast.error(error.response.data.message)
           // console.log("token", token)
         }
-    }
+    // }
       }
   return (
     <div className='blockuserparent'>
         <div className="usercontainer">
             <div className="choseUser">
                 <p>Select a user</p>
+                
                 <select 
                 value={userId}
                 onChange={(e)=>setUserId(e.target.value)}
                 name="block" id="block">
-                    { loading ? <option value="">fetching data...</option>:
-                    allUsers?.length === 0 ? 
-                    <option value="">There is no user here</option> :
+                    <option value="">select</option>
+                    { 
+                    // loading ? <TfiReload />:
+                    // allUsers?.length === 0 ? 
+                    // <div>There is no user here</div> :
                         allUsers?.map((e,index)=> (
-                            <option key={index} value={e._id}>{e.name}</option>
+                            <option key={index} value={e._id}>{`${e.firstName} ${e.lastName}`}</option>
                         ))
                     }
                 </select>
