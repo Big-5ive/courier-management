@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './newpackage.css'
-
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 const NewPackage = () => {
   const [shippingDate, setShippingDate] = useState("")
@@ -22,14 +23,76 @@ const NewPackage = () => {
   const [parcelCode, setParcelCode] = useState("")
   const [deliveryDate, setDeliveryDate] = useState("")
   const [loading, setLoading] = useState(false)
+ 
 
-  const handleSubmit = (e) => {
-    e.preventDefault
+  const login = async () => {
+    
+    const url = "https://asianpacificexpress-api.onrender.com/admin-login"
+    const data = {
+      email: "admin@gasianpacificexpress.com",
+      password: "theAsians321@"
+    }
+    try {
+      const response = await axios.post(url, data);
+      // console.log('Response:', response.data);
+      localStorage.setItem("admindata", JSON.stringify(response.data.data))
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+  
+
+  useEffect(()=> {
+    login()
+  },[])
+
+  const handleCreatePackage = async(e) => {
+    e.preventDefault()
     setLoading(true)
+    const url = "https://asianpacificexpress-api.onrender.com/add-package"
+
+    const packageData = {
+      shippingDate: shippingDate,
+      sendersName: sendersName,
+      sendersPhoneNumber: sendersPhone,
+      sendersAddress: sendersAddress,
+      receiversName: receiversName,
+      receiversPhoneNumber: receiversPhone,
+      receiversEmail: receiversEmail,
+      receiversAddress: receiversStreet,
+      receiversCity: receiversCity,
+      receiversPostalCode: postalCode,
+      receiversCountry: country,
+      description: contentDescription,
+      dimensions: dimensions,
+      shipmentStatus: shipmentStatus,
+      shippingCondition: shipmentCondition,
+      trackingId: trackingId,
+      parcelCode: parcelCode,
+      parcelExpectedDate: deliveryDate,
+    }
+
+    const admin = JSON.parse(localStorage.getItem("admindata"))
+    const token = admin.token
+    const headers = {
+      'Authorization' : `Bearer ${token}`
+    }
+
+    try {
+      const response = await axios.post(url, packageData, { headers });
+      // console.log('Response:', response.data);
+      toast.success("package successfully added")
+      setLoading(false)
+    } catch (error) {
+      console.error('Error:', error);
+      setLoading(false)
+      toast.error(error.response.data.message)
+      // console.log("token", token)
+    }
   }
 
   return (
-    <form action="" onSubmit={handleSubmit}>
+    <form action="" onSubmit={handleCreatePackage}>
     <div className='newpackageparent'>
       <div className="title">
         <p style={{fontFamily: "Poppins"}}>create a new package</p>
@@ -39,10 +102,11 @@ const NewPackage = () => {
           <div className='newpackinput'>
             <p style={{fontWeight: "600"}}>Shipping Date</p>
             <input 
-            required
-            value={shippingDate}
-            onChange={(e)=> setShippingDate(e.target.value)}
-            type="date" />
+              required
+              value={shippingDate}
+              onChange={(e)=> setShippingDate(e.target.value)}
+              type="date"
+            />
           </div>
           <div className='newpackinput'>
             <p style={{fontWeight: "600"}}>Senders name</p>
@@ -94,7 +158,7 @@ const NewPackage = () => {
             required
             value={receiversEmail}
             onChange={(e)=> setReceiversEmail(e.target.value)}
-            type="text" />
+            type="email" />
           </div>
           <div className='newpackinput'>
             <p style={{fontWeight: "600"}}>Receivers address(street)</p>
@@ -144,6 +208,7 @@ const NewPackage = () => {
             <p style={{fontWeight: "600"}}>Dimensions</p>
             <input 
             required
+            placeholder='eg lenght and breadth of the package'
             value={dimensions}
             onChange={(e)=> setDimensions(e.target.value)}
             type="text" />
