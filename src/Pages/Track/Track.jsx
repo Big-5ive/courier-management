@@ -3,6 +3,7 @@ import axios from "axios";
 import { FaInfoCircle } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "../../Components/ScrollToTop";
 
 const headers = [
   "Shipping Date",
@@ -58,6 +59,7 @@ const Track = () => {
 
   return (
     <>
+    <ScrollToTop />
       <div className="min-h-screen flex items-center justify-center bg-gray-100 flex-col mt-[75px]">
         <div className="w-full max-w-2xl p-4">
           <h1 className="text-3xl font-bold text-center mb-8">TRACK & TRACE</h1>

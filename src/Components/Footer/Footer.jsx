@@ -7,13 +7,13 @@ const Footer = () => {
           <div className="footer__top--container">
             <div className="footer__title">About</div>
             <div className="footer__content">
-              <a href="/company" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 Our Company
               </a>
-              <a href="/company" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 Who We Are
               </a>
-              <a href="/company" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 What we Do
               </a>
               {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}
@@ -23,16 +23,16 @@ const Footer = () => {
           <div className="footer__top--container">
             <div className="footer__title">Our Service</div>
             <div className="footer__content">
-              <a href="/lhs" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 International shipping
               </a>
-              <a href="/offshore" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 Freight services
               </a>
-              <a href="/ppm" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 Real time tracking
               </a>
-              <a href="/storage" className="footer__content--text">
+              <a href="/#/company" className="footer__content--text">
                 Custom logistic solutions
               </a>
               {/* <p className="footer__content--text"></p> */}
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="footer__top--container">
             <div className="footer__title">Support</div>
             <div className="footer__content">
-              <a href="/privacy&policy" className="footer__content--text">
+              <a href="/#/contact" className="footer__content--text">
                 Contact Us
               </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}

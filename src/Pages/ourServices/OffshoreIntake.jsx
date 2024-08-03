@@ -1,11 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import "./offshore.css";
 import Storage from "./Storage";
+import ScrollToTop from "../../Components/ScrollToTop";
 
 const OffshoreIntake = () => {
   const nav = useNavigate();
   return (
     <>
+    <ScrollToTop />
       <div className="offshoreWrap">
         <div className="hero">
           <div className="writebox">
