@@ -12,7 +12,8 @@ const Home = ({props, one, two, three, name}) => {
   const nav = useNavigate()
 
   const handleLogOut = () => {
-    localStorage.removeItem("")
+    localStorage.removeItem("admindata")
+    nav("/adminlogin")
   }
   return (
     <div className='adminparent'>
@@ -35,7 +36,9 @@ const Home = ({props, one, two, three, name}) => {
             <aside className='navmap' style={{color: "white", fontSize: "20px", fontWeight: "600"}}>{name}</aside>
           </div>
           <div className="headset">
-            <h1>logout</h1>
+            <div onClick={handleLogOut}>
+              <h1>logout</h1>
+            </div>
             <div className='burger' onClick={()=> setBurgerMenu(!burgerMenu)}>
               <TiThMenu />
             </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './newpackage.css'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 
 const NewPackage = () => {
   const [shippingDate, setShippingDate] = useState("")
@@ -24,27 +25,7 @@ const NewPackage = () => {
   const [deliveryDate, setDeliveryDate] = useState("")
   const [loading, setLoading] = useState(false)
  
-
-  const login = async () => {
-    
-    const url = "https://asianpacificexpress-api.onrender.com/admin-login"
-    const data = {
-      email: "admin@gasianpacificexpress.com",
-      password: "theAsians321@"
-    }
-    try {
-      const response = await axios.post(url, data);
-      // console.log('Response:', response.data);
-      localStorage.setItem("admindata", JSON.stringify(response.data.data))
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
-  
-
-  useEffect(()=> {
-    login()
-  },[])
+  const nav = useNavigate()
 
   const handleCreatePackage = async(e) => {
     e.preventDefault()
@@ -83,6 +64,10 @@ const NewPackage = () => {
       // console.log('Response:', response.data);
       toast.success("package successfully added")
       setLoading(false)
+      setTimeout(()=>{
+        nav("/allpackage")
+      }, 3000)
+      
     } catch (error) {
       console.error('Error:', error);
       setLoading(false)
@@ -109,7 +94,7 @@ const NewPackage = () => {
             />
           </div>
           <div className='newpackinput'>
-            <p style={{fontWeight: "600"}}>Senders name</p>
+            <p style={{fontWeight: "600"}}>Senders fullName</p>
             <input 
             required
             value={sendersName}
@@ -135,7 +120,7 @@ const NewPackage = () => {
             type="text" />
           </div>
           <div className='newpackinput'>
-            <p style={{fontWeight: "600"}}>Receivers name</p>
+            <p style={{fontWeight: "600"}}>Receivers FullName</p>
             <input 
             required
             value={receiversName}

@@ -40,7 +40,7 @@ const route = createHashRouter([
     ],
   },
   {
-    path: "/login",
+    path: "/adminlogin",
     element: <Login />,
   },
   {
