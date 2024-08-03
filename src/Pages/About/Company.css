@@ -1,3 +1,205 @@
+.company {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.company__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.company__left,
+.company__right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__image-container img {
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.company__content {
+  width: 100%;
+  height: 80%;
+}
+
+.company__welcome {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company__welcome-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(223, 101, 18);
+}
+
+.company__dash {
+  width: 50px;
+  height: 10%;
+  background-color: #e2c60c;
+}
+
+.company__intro {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.company__intro-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.company__intro-subtitle {
+  font-weight: 900;
+  line-height: 1.5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.company__description {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+  .company {
+    margin-top: 0;
+  }
+
+  .company__right {
+    width: 53%;
+  }
+
+  .company__welcome {
+    padding-bottom: 10px;
+  }
+
+  .company__description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .company {
+    gap: 20px;
+  }
+
+  .company__container {
+    gap: 3px;
+    margin-top: 0;
+  }
+
+  .company__image-container img {
+    height: 100%;
+  }
+
+  .company__image-container {
+    width: 90%;
+    height: 50%;
+  }
+
+  .company__welcome {
+    width: 60%;
+  }
+
+  .company__intro {
+    width: 95%;
+  }
+
+  .company__intro-title {
+    font-size: xx-large;
+  }
+
+  .company__description {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .company__container {
+    height: 230vh;
+    flex-direction: column;
+  }
+
+  .company__left,
+  .company__right {
+    width: 100%;
+  }
+
+  .company__content {
+    width: 75%;
+    height: 95%;
+  }
+
+  .company__intro-title {
+    font-size: x-large;
+  }
+
+  .company__description {
+    height: 80%;
+    line-height: 1.9;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .company__left,
+  .company__right {
+    width: 100%;
+  }
+
+  .company__image-container img {
+    height: 90%;
+    width: 90%;
+  }
+
+  .company__content {
+    width: 90%;
+  }
+
+  .company__intro {
+    font-size: 13px;
+    justify-content: flex-start;
+  }
+
+  .company__description {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    font-size: 13px;
+    gap: 20px;
+  }
+}
+
+
+
+
+
 .wholebody {
   width: 100%;
   height: max-content;
@@ -104,9 +306,10 @@
   /* background-color: black; */
 }
 
-@media screen and (width <= 1024px) {
+@media screen and (max-width:1024px) {
     .wholebody{
         height: max-content;
+        margin-top: 0px;
     }
   .bodyright {
     width: 53%;
@@ -125,14 +328,15 @@
   }
 }
 
-@media screen and (width <= 768px) {
+@media screen and (max-width:768px) {
   .wholebody {
-    margin-top: 0px;
+    margin-top: 0px !important;
+    gap: 20px !important;
   }
 
   .body {
     gap: 3px;
-    margin-top: 20px;
+    margin-top: 0px !important;
   }
   .bodyleftimage img {
     width: 100%;
@@ -141,8 +345,9 @@
   }
   .bodyleftimage{
     width: 90%;
-    height: 70%;
+    height: 50%;
     border-radius: 5px;
+    object-fit: contain;
   }
 
   .welcome {
@@ -162,7 +367,7 @@
     font-size: small;
   }
 }
-@media screen and (width <= 701px) {
+@media screen and (max-width:701px) {
   .body {
     height: 230vh;
     flex-direction: column;
@@ -174,10 +379,7 @@
     justify-content: center;
     align-items: center;
   }
-  /* .bodyleft img {
-    height: 90%;
-    width: 75%;
-  } */
+
   .bodyright {
     width: 100%;
     height: 100%;
@@ -206,7 +408,7 @@
     font-size: 15px;
   }
 }
-@media screen and (width <= 425px) {
+@media screen and (max-width: 425px) {
 
   .bodyleft {
     width: 100%;

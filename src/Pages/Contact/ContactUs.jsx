@@ -15,7 +15,7 @@ const ContactUs = () => {
           alt=""
         /> */}
         <div className="AboutheroText">
-          <h3 className="AboutheroIntro">Contact Us Now</h3>
+          <h3 className="AboutheroIntro max-[700px]:text-2xl">Contact Us Now</h3>
 
         </div>
       </div>
