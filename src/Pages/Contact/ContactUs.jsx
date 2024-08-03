@@ -1,22 +1,63 @@
-import "./ContactUs.css";
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './ContactUs.css';
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Basic form validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
+      toast.error('Please fill in all fields');
+      return;
+    }
+
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+
+    // Display success message
+    toast.success('Your message has been sent successfully');
+
+    // Clear form data
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+  };
+
   return (
     <>
+      <ToastContainer />
       <div className="ContactheroContainer">
         <img
           className="AboutheroImage"
           src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/8-Banner-1.jpg"
           alt=""
         />
-        {/* <img
-          className="AboutheroImage"
-          src="./shipcon.jpg"
-          alt=""
-        /> */}
         <div className="AboutheroText">
           <h3 className="AboutheroIntro max-[700px]:text-2xl">Contact Us Now</h3>
-
         </div>
       </div>
 
@@ -32,15 +73,21 @@ const ContactUs = () => {
           </div>
           <div className="GetInTouchRight">
             <p className="mb-5 GetInTouchTitle1">Get in Touch</p>
-            <div className="GetInTouchRightWrapper">
+            <form onSubmit={handleSubmit} className="GetInTouchRightWrapper">
               <div className="GetInTouchInputContainer">
                 <input
                   type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
                   placeholder="First Name"
                   className="GetInTouchInput"
                 />
                 <input
                   type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
                   placeholder="Last Name"
                   className="GetInTouchInput"
                 />
@@ -48,27 +95,33 @@ const ContactUs = () => {
               <div className="GetInTouchInputContainer">
                 <input
                   type="text"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email"
                   className="GetInTouchInput"
                 />
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   placeholder="Subject"
                   className="GetInTouchInput"
                 />
               </div>
               <textarea
                 className="GetInTouchTextArea"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Type Your Message Here..."
-                name=""
-                id=""
               ></textarea>
-              <button className="submit">SUBMIT</button>
-            </div>
+              <button type="submit" className="submit">SUBMIT</button>
+            </form>
           </div>
         </div>
       </div>
-      
     </>
   );
 };
