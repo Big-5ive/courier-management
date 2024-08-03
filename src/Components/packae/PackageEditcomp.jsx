@@ -64,6 +64,8 @@ const Package1 = () => {
     
         fetchData();
       }, []);
+
+      const newPackage = [...allPackage].reverse()
   return (
     <div className='packageParent'>
         <div className="allpackagehold">
@@ -84,7 +86,7 @@ const Package1 = () => {
                 (
                     loading? <div>Fetching data ... pls wait</div>:
                     allPackage?.length === 0 ? <div>No data available, try adding packages</div>:
-                    allPackage?.map((e, index) => (
+                    newPackage?.map((e, index) => (
                         <div key={index} className="packageHold">
                 <div className="number">
                     <h1>{index + 1}</h1>

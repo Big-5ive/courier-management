@@ -53,8 +53,8 @@ const nav = useNavigate()
                     <button className="logo-button">Admin Login</button>
                 </div>
                 <div className="login-form">
-                    <h2>Welcome Back to Asian Pacific Express</h2>
-                    <p>Ready to kickstart todays jorney?</p>
+                    <h2>Welcome Back to ADMIN</h2>
+                    <p>Asian Delivery Express</p>
                     <form>
                         <div className="input-group">
                             <FaEnvelope />

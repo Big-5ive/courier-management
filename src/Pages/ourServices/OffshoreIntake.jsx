@@ -9,8 +9,8 @@ const OffshoreIntake = () => {
       <div className="offshoreWrap">
         <div className="hero">
           <div className="writebox">
-            <p>Offshore intake/</p>
-            <p>Offtake Facilities</p>
+            <p>We make deliveries easy/</p>
+            <p>Local and international</p>
             <p id="pp"></p>
           </div>
           <img src="./ship.jpg" alt="Ship" />
