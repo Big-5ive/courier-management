@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="footer__title">Support</div>
             <div className="footer__content">
               <a href="/#/contact" className="footer__content--text">
-                Contact Us
+                support@asianpacificexpress.com
               </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}
             </div>

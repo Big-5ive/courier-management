@@ -71,38 +71,45 @@ const Header = () => {
     navigate("/track");
   };
 
-  useEffect(() => {
-    const handleAuthentication = async () => {
-      try {
-        const response = await axios.get(
-          "https://asianpacificexpress-api.onrender.com/auth/google/success",
-          {
-            withCredentials: true, // Important for cookie-based authentication
-          }
-        );
+  const handleoogle = () => {
+    // const url = "https://asianpacificexpress-api.onrender.com/auth/google/success"
+    return(
+      <a href={url}></a>
+    )
+  }
 
-        if (response.data && response.data.data) {
-          // Assuming the user data is in response.data.data
-          const user = response.data.data;
+  // useEffect(() => {
+  //   const handleAuthentication = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         "https://asianpacificexpress-api.onrender.com/auth/google/success",
+  //         {
+  //           withCredentials: true, // Important for cookie-based authentication
+  //         }
+  //       );
 
-          // Store user data in local storage or a context
-          localStorage.setItem("user", JSON.stringify(user));
-          setUserprofilePicture(user.profilePicture.url);
+  //       if (response.data && response.data.data) {
+  //         // Assuming the user data is in response.data.data
+  //         const user = response.data.data;
 
-          // Redirect to the homepage
-          navigate("/"); // Change to your actual homepage route
-        } else {
-          // Redirect to login page on failure
-          navigate("/login"); // Adjust this route as necessary
-        }
-      } catch (error) {
-        console.error("Error during authentication:", error.message);
-        navigate("/login"); // Redirect to login page on error
-      }
-    };
+  //         // Store user data in local storage or a context
+  //         localStorage.setItem("user", JSON.stringify(user));
+  //         setUserprofilePicture(user.profilePicture.url);
 
-    handleAuthentication();
-  }, [navigate]);
+  //         // Redirect to the homepage
+  //         navigate("/"); // Change to your actual homepage route
+  //       } else {
+  //         // Redirect to login page on failure
+  //         navigate("/login"); // Adjust this route as necessary
+  //       }
+  //     } catch (error) {
+  //       console.error("Error during authentication:", error.message);
+  //       navigate("/login"); // Redirect to login page on error
+  //     }
+  //   };
+
+  //   handleAuthentication();
+  // }, [navigate]);
 
   return (
     <>
@@ -169,9 +176,9 @@ const Header = () => {
                       Continue with:
                     </p>
                     <div className="flex justify-center space-x-4 my-2">
-                      <a href="https://asianpacificexpress-api.onrender.com/googlelogin">
+                      <div>
                         <FaGoogle className="cursor-pointer text-xl text-gray-700" />
-                      </a>
+                      </div>
                       <FaTwitter className="cursor-pointer text-xl text-gray-700" />
                     </div>
                     <p className="text-xs text-gray-500 text-center mt-2">

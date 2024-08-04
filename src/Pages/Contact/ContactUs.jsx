@@ -86,7 +86,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-purple-600 mr-3" />
-              <p>support@asiandeliveryexpress.com</p>
+              <p>support@asianpacificexpress.com</p>
             </div>
           </div>
 
