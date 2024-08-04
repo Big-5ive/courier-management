@@ -68,7 +68,7 @@ const Home = ({props, one, two, three, name}) => {
               <TbStatusChange />
               <p>Change user ststus</p>
             </div>
-            <div className="menulog">
+            <div className="menulog" onClick={handleLogOut}>
               <SlLogout />
               <p>Log out</p>
             </div>

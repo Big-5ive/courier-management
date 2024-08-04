@@ -78,7 +78,7 @@ const ContactUs = () => {
             </p>
             <div className="flex items-center mb-4">
               <FaMapMarkerAlt className="text-purple-600 mr-3" />
-              <p>1055 Arthur ave Elk Groot, 67. New Palmas South Carolina.</p>
+              <p>358 East Daming Road Shanghai, Shanghai 200080. China.</p>
             </div>
             <div className="flex items-center mb-4">
               <FaPhoneAlt className="text-purple-600 mr-3" />
@@ -86,7 +86,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-purple-600 mr-3" />
-              <p>Contact@moralizer.com</p>
+              <p>support@asiandeliveryexpress.com</p>
             </div>
           </div>
 
