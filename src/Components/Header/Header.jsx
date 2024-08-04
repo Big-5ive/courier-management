@@ -2,13 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import HeaderBurgerPopUp from "./HeaderBurgerPopUp";
 import { useLocation, useNavigate } from "react-router-dom";
-import { FaSearch, FaUser, FaGoogle, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaUser, FaGoogle, FaTwitter } from "react-icons/fa";
 import "../../Style/header.css";
 import axios from "axios";
 
 const Header = () => {
-  const [aboutHover, setAboutHover] = useState(false);
-  const [servicesHover, setServicesHover] = useState(false);
   const [menuPop, setMenuPop] = useState(false);
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -75,34 +73,21 @@ const Header = () => {
     const handleAuthentication = async () => {
       try {
         const response = await axios.get(
-          "https://asianpacificexpress-api.onrender.com/auth/google/success",
-          {
-            withCredentials: true, // Important for cookie-based authentication
-          }
+          " https//asainpacificexpress-api.onrender.com/auth/user"
         );
-
         if (response.data && response.data.data) {
-          // Assuming the user data is in response.data.data
           const user = response.data.data;
-
-          // Store user data in local storage or a context
-          localStorage.setItem("user", JSON.stringify(user));
-          setUserprofilePicture(user.profilePicture.url);
-
-          // Redirect to the homepage
-          navigate("/"); // Change to your actual homepage route
-        } else {
-          // Redirect to login page on failure
-          navigate("/login"); // Adjust this route as necessary
+          // Store user data in local storage or context
+          localStorage.setItem('user', JSON.stringify(user));
         }
       } catch (error) {
         console.error("Error during authentication:", error.message);
-        navigate("/login"); // Redirect to login page on error
+        // navigate("/"); // Redirect to login page on error
       }
     };
 
     handleAuthentication();
-  }, [navigate]);
+  }, []);
 
   return (
     <>
@@ -117,7 +102,11 @@ const Header = () => {
         <div className="headerWrapper">
           <div className="headerLogo">
             <div className="headerh3" onClick={() => handleNav("/")}>
-              <img src="/icons/APE2.png" alt="" className="max-[700px]:w-[100px]" />
+              <img
+                src="/icons/APE2.png"
+                alt=""
+                className="max-[700px]:w-[100px]"
+              />
             </div>
           </div>
           <div className="headerNavs">
@@ -175,7 +164,10 @@ const Header = () => {
                       <FaTwitter className="cursor-pointer text-xl text-gray-700" />
                     </div>
                     <p className="text-xs text-gray-500 text-center mt-2">
-                      By signing in via social media, I agree to the Asian Pacific Express Free Membership Agreement and Privacy Policy, and to receive emails about the platform’s products and services.
+                      By signing in via social media, I agree to the Asian
+                      Pacific Express Free Membership Agreement and Privacy
+                      Policy, and to receive emails about the platform’s
+                      products and services.
                     </p>
                   </div>
                 )}
@@ -193,18 +185,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useEffect, useRef, useState } from "react";
 // import { HiOutlineMenuAlt4 } from "react-icons/hi";
@@ -285,8 +265,6 @@ export default Header;
 //     nav("/track");
 //   };
 
-
-
 //   useEffect(() => {
 //     const handleAuthentication = async () => {
 //       try {
@@ -315,7 +293,6 @@ export default Header;
 
 //     handleAuthentication();
 //   }, [nav]);
-
 
 //   return (
 //     <>
@@ -391,7 +368,7 @@ export default Header;
 //                         className="cursor-pointer text-xl text-gray-700"
 //                         // onClick={handleGoogleLogin}
 //                       />
-//                      </a> 
+//                      </a>
 //                       <FaTwitter
 //                         className="cursor-pointer text-xl text-gray-700"
 //                         // onClick={handleTwitterLogin}
@@ -419,19 +396,6 @@ export default Header;
 // };
 
 // export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useRef, useState } from "react";
 // import { HiOutlineMenuAlt4 } from "react-icons/hi";
