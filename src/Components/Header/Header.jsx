@@ -75,8 +75,8 @@ const Header = () => {
         const response = await axios.get(
           " https//asainpacificexpress-api.onrender.com/auth/user"
         );
-        if (response.data && response.data.data) {
-          const user = response.data.data;
+        if (response.data) {
+          const user = response.data;
           // Store user data in local storage or context
           localStorage.setItem('user', JSON.stringify(user));
         }
@@ -147,7 +147,7 @@ const Header = () => {
                 {showDropdown && (
                   <div
                     ref={dropdownRef}
-                    className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-50"
+                    className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-[99]"
                     onMouseDown={handleMouseDown}
                     style={{ cursor: "move" }}
                   >
