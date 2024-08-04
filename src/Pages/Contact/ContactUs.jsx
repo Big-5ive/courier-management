@@ -55,7 +55,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <section className="w-screen lg:h-[60vh] h-[4ovh] relative ">
+      <section className="w-screen lg:h-[60vh] h-[40vh] relative ">
         <img
           className="w-full h-full"
           src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/8-Banner-1.jpg"
