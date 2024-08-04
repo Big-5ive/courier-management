@@ -2,11 +2,11 @@
   height: 75px;
   width: 100%;
   /* background-color: green; */
+  color: #fff;
   display: flex;
   justify-content: center;
-  color: #fff;
   position: absolute;
-  z-index: 1;
+  z-index: 333;
 }
 
 .headerWrapper {
@@ -96,5 +96,6 @@
 
   .HeaderMenu {
     display: flex;
+    z-index: 999;
   }
 }

@@ -69,8 +69,8 @@ const ContactUs = () => {
       </section>
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
         <ToastContainer />
-        <div className="w-full max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="flex flex-col justify-center bg-white p-6 rounded-lg shadow-md">
+        <div className="w-full max-w-6xl mx-auto md:p-6 p-3 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="flex flex-col justify-center md:bg-white md:p-6 rounded-lg md:shadow-md">
             <h2 className="text-3xl font-semibold mb-4">Let's talk with us</h2>
             <p className="text-gray-600 mb-2">
               Questions, comments, or suggestions? Simply fill in the form and
@@ -90,7 +90,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="md:bg-white md:p-6 rounded-lg md:shadow-md">
             <h2 className="text-3xl font-semibold mb-4 text-center">
               Contact Us
             </h2>
