@@ -75,6 +75,8 @@ const Header = () => {
         const response = await axios.get(
           " https//asainpacificexpress-api.onrender.com/auth/user"
         );
+        console.log(response);
+        
         if (response.data) {
           const user = response.data;
           localStorage.setItem('user', JSON.stringify(user));
