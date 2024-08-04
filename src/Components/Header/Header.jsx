@@ -77,16 +77,18 @@ const Header = () => {
         );
         if (response.data) {
           const user = response.data;
-          // Store user data in local storage or context
           localStorage.setItem('user', JSON.stringify(user));
         }
       } catch (error) {
         console.error("Error during authentication:", error.message);
-        // navigate("/"); // Redirect to login page on error
       }
     };
 
-    handleAuthentication();
+    const timer = setTimeout(() => {
+      handleAuthentication();
+    }, 10000);
+
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
@@ -185,6 +187,15 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+
 
 // import { useEffect, useRef, useState } from "react";
 // import { HiOutlineMenuAlt4 } from "react-icons/hi";
