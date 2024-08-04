@@ -5,46 +5,54 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./ThirdSection.css";
 
 const ThirdSection = () => {
-  const [fullName, setFullName] = useState("");
-  const [companyName, setCompanyName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [deliveryAddress, setDeliveryAddress] = useState("");
+  const [postalCode, setPostalCode] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [productType, setProductType] = useState("");
+  const [deliveryType, setDeliveryType] = useState("");
+  const [pickupLocation, setPickupLocation] = useState("");
   const [warning, setWarning] = useState(false);
   const nav = useNavigate();
 
-  const handleProductType = (e) => {
-    const product = e.target.value;
-    setProductType(product);
+  const handleDeliveryType = (e) => {
+    const type = e.target.value;
+    setDeliveryType(type);
   };
 
   const handleOrderNow = () => {
     if (
-      fullName &&
-      companyName &&
+      firstName &&
+      lastName &&
       deliveryAddress &&
+      postalCode &&
       email &&
       phoneNumber &&
-      productType
+      deliveryType &&
+      pickupLocation
     ) {
       const userInfo = {
-        fullName,
-        companyName,
+        firstName,
+        lastName,
         deliveryAddress,
+        postalCode,
         email,
         phoneNumber,
-        productType,
+        deliveryType,
+        pickupLocation
       };
       localStorage.setItem("userInfo", JSON.stringify(userInfo));
       toast.success("Order placed successfully!");
       setTimeout(()=>{
-        setCompanyName("")
-        setDeliveryAddress("")
-        setEmail("")
-        setFullName("")
-        setPhoneNumber("")
-        setProductType("")
+        setFirstName("");
+        setLastName("");
+        setDeliveryAddress("");
+        setPostalCode("");
+        setEmail("");
+        setPhoneNumber("");
+        setDeliveryType("");
+        setPickupLocation("");
       },3000)
     } else {
       setWarning(true);
@@ -62,52 +70,63 @@ const ThirdSection = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                onChange={(e) => setFullName(e.target.value)}
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                onChange={(e) => setCompanyName(e.target.value)}
+                onChange={(e) => setLastName(e.target.value)}
+                value={lastName}
               />
             </div>
             <input
               className="thirdSectionFormInput"
-              type="Address"
+              type="text"
               placeholder="Your Delivery Address"
               onChange={(e) => setDeliveryAddress(e.target.value)}
+              value={deliveryAddress}
+            />
+            <input
+              className="thirdSectionFormInput"
+              type="text"
+              placeholder="Postal/Zip Code"
+              onChange={(e) => setPostalCode(e.target.value)}
+              value={postalCode}
             />
             <div className="thirdSectionFormName">
               <input
                 type="email"
                 placeholder="Email Address"
                 onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
               <input
                 type="number"
                 placeholder="Phone No"
                 onChange={(e) => setPhoneNumber(e.target.value)}
+                value={phoneNumber}
               />
             </div>
             <select
               className="thirdSectionFormInput"
-              name=""
-              id=""
-              onChange={handleProductType}
+              name="deliveryType"
+              onChange={handleDeliveryType}
+              value={deliveryType}
             >
-              <option value="">
-                Select delivery type 
-              </option>
-              <option value="Offshore intake/offtake Facilities">
-                International 
-              </option>
-              {/* <option value="Storage Facilities">Storage Facilities</option> */}
-              <option value="Petroleum Service Station">
-                National
-              </option>
-              {/* <option value="Logistics & Haulage Services">
-                Logistics & Haulage Services
-              </option> */}
+              <option value="">Select delivery type</option>
+              <option value="Air freight">Air freight</option>
+              <option value="Ocean freight">Ocean freight</option>
+              <option value="Road freight">Road freight</option>
+              <option value="Rail freight">Rail freight</option>
             </select>
+            <input
+              className="thirdSectionFormInput"
+              type="text"
+              placeholder="Pickup Location"
+              onChange={(e) => setPickupLocation(e.target.value)}
+              value={pickupLocation}
+            />
             <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
               <p className="thirdSectionFormBtn rounded font-medium" onClick={handleOrderNow}>
                 DONE
@@ -152,7 +171,7 @@ const ThirdSection = () => {
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Short Time Delivery</p>
                 <p className="thirdSectionCardRightContent">
-                Our Short Time Delivery service ensures your urgent packages arrive quickly and safely.
+                  Our Short Time Delivery service ensures your urgent packages arrive quickly and safely.
                 </p>
               </div>
             </div>
@@ -166,8 +185,8 @@ const ThirdSection = () => {
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Low Prices</p>
                 <p className="thirdSectionCardRightContent">
-                Our Affordable Delivery service ensures your packages arrive on time, every time, 
-                at prices that won’t stretch your budget.
+                  Our Affordable Delivery service ensures your packages arrive on time, every time, 
+                  at prices that won’t stretch your budget.
                 </p>
               </div>
             </div>
@@ -193,7 +212,7 @@ const ThirdSection = () => {
                   Emergency service
                 </p>
                 <p className="thirdSectionCardRightContent">
-                We handle urgent requests with priority, ensuring your crucial packages reach their destination quickly and securely, no matter the situation.
+                  We handle urgent requests with priority, ensuring your crucial packages reach their destination quickly and securely, no matter the situation.
                 </p>
               </div>
             </div>
@@ -229,9 +248,10 @@ export default ThirdSection;
 
 
 // import { useState } from "react";
-// import "./ThirdSection.css";
 // import { useNavigate } from "react-router-dom";
-
+// import { ToastContainer, toast } from "react-toastify";
+// import 'react-toastify/dist/ReactToastify.css';
+// import "./ThirdSection.css";
 
 // const ThirdSection = () => {
 //   const [fullName, setFullName] = useState("");
@@ -245,12 +265,9 @@ export default ThirdSection;
 
 //   const handleProductType = (e) => {
 //     const product = e.target.value;
-//     console.log(product);
 //     setProductType(product);
-//     // console.log(productType);
-//     // setUserInfo((p)=>({...p, productType:product}))
-//     // console.log(userInfo.productType); 
 //   };
+
 //   const handleOrderNow = () => {
 //     if (
 //       fullName &&
@@ -269,15 +286,26 @@ export default ThirdSection;
 //         productType,
 //       };
 //       localStorage.setItem("userInfo", JSON.stringify(userInfo));
-//       nav("/checkout");
+//       toast.success("Order placed successfully!");
+//       setTimeout(()=>{
+//         setCompanyName("")
+//         setDeliveryAddress("")
+//         setEmail("")
+//         setFullName("")
+//         setPhoneNumber("")
+//         setProductType("")
+//       },3000)
+//     } else {
+//       setWarning(true);
 //     }
-//     setWarning(true)
 //   };
+
 //   return (
 //     <div className="thirdSectionContainer" id="price">
+//       <ToastContainer />
 //       <div className="thirdSectionWrapper">
 //         <div className="thirdSectionformContainer">
-//           <h1 className="thirdSectionFormTitle">Start your delevery process here</h1>
+//           <h1 className="thirdSectionFormTitle">Start your delivery process here</h1>
 //           <form action="" method="post" className="thirdSectionForm">
 //             <div className="thirdSectionFormName">
 //               <input
@@ -309,30 +337,23 @@ export default ThirdSection;
 //                 onChange={(e) => setPhoneNumber(e.target.value)}
 //               />
 //             </div>
-//             {/* <select
+//             <select
 //               className="thirdSectionFormInput"
 //               name=""
 //               id=""
 //               onChange={handleProductType}
 //             >
 //               <option value="">
-//                 Select delevery type 
+//                 Select delivery type 
 //               </option>
 //               <option value="Offshore intake/offtake Facilities">
-//                 Offshore intake/offtake Facilities
+//                 International 
 //               </option>
-//               <option value="Storage Facilities">Storage Facilities</option>
-              
+//               {/* <option value="Storage Facilities">Storage Facilities</option> */}
 //               <option value="Petroleum Service Station">
-//                 Petroleum Service Station
+//                 National
 //               </option>
-//               <option value="Logistics & Haulage Services">
-//                 Logistics & Haulage Services
-//               </option>
-//             </select> */}
-//             {/* <select className="thirdSectionFormInput" name="" id="">
-//               <option value="How Many Litres?">How Many Litres?</option>
-//             </select> */}
+//             </select>
 //             <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
 //               <p className="thirdSectionFormBtn rounded font-medium" onClick={handleOrderNow}>
 //                 DONE
