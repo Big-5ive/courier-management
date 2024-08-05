@@ -20,7 +20,7 @@ const ClientLogin = () => {
           <p className="text-sm">Join the future of attendance management. Sign up now to experience seamless and secure attendance tracking with Proximity.</p>
         </div>
         <div className="w-full md:w-1/2 p-3 sm:p-5 md:p-6 lg:p-8 flex flex-col justify-center items-center">
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-4 text-center">Welcome Back to Proximity!</h2>
+          <h2 className="text-2xl lg:text-3xl font-semibold mb-4 text-center">Welcome Back to Pacific Express</h2>
           <p className="text-gray-600 mb-8 text-center">Ready to mark your presence? Log in to continue.</p>
           <form className="space-y-1 w-full lg:w-[80%] flex flex-col justify-center items-center">
             <div className='w-full mb-4'>
