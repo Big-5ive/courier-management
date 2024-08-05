@@ -45,6 +45,13 @@ const Footer = () => {
               <a href="/#/contact" className="footer__content--text">
                 support@asianpacificexpress.com
               </a>
+              <a href="/#/contact" className="footer__content--text">
+                
+                117 Seongchang Bldg jung-gu Seol KR, South Korea
+              </a>
+              <a href="/#/contact" className="footer__content--text">
+                +82 1577-0484
+              </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}
             </div>
           </div>
