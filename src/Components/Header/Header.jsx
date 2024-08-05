@@ -73,7 +73,7 @@ const Header = () => {
     const handleAuthentication = async () => {
       try {
         const response = await axios.get(
-          " https//asainpacificexpress-api.onrender.com/auth/user"
+          "https://asianpacificexpress-api.onrender.com/auth/user"
         );
         console.log(response);
         
