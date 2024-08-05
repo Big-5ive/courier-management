@@ -21,7 +21,8 @@ const Home = ({props, one, two, three, name}) => {
       <div className="adminhold">
         <div className="adminHead">
           <div className="headloggo">
-            <GrUserAdmin color='orangered'/>
+            <GrUserAdmin color='orangered' fontSize={"30px"}/>
+            <p>Admin</p>
           </div>
           <div className="headnav">
             {/* {name} */}
