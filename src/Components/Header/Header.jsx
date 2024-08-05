@@ -46,13 +46,13 @@ const Header = () => {
   };
 
   const handleAbout = () => {
-    setServicesHover(false);
-    setAboutHover(true);
+    // setServicesHover(false);
+    // setAboutHover(true);
     navigate("/company");
   };
   const handleService = () => {
-    setAboutHover(false);
-    setServicesHover(true);
+    // setAboutHover(false);
+    // setServicesHover(true);
     navigate("/offshore");
   };
   const handleNav = (val) => {
