@@ -13,7 +13,7 @@ const Footer = () => {
               <a href="/#/company" className="footer__content--text">
                 Who We Are
               </a>
-              <a href="/#/company" className="footer__content--text">
+              <a href="/#/offshore" className="footer__content--text">
                 What we Do
               </a>
               {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}

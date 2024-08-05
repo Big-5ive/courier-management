@@ -54,7 +54,10 @@ const Package1 = () => {
             const response = await axios.get(url, { headers });
             // setData(response.data);
             // console.log(response)
-            setAllpackage(response?.data.data)
+            const incommingData = (response?.data.data)
+            const newdata = [...incommingData].reverse()
+            setAllpackage(newdata)
+
             setLoading(false)
           } catch (error) {
             // console.log(error);
@@ -65,7 +68,7 @@ const Package1 = () => {
         fetchData();
       }, []);
 
-      const newPackage = [...allPackage]?.reverse()
+    //   const newPackage = [...allPackage]?.reverse()
     //   console.log("pack",allPackage)
   return (
     <div className='packageParent'>
@@ -87,7 +90,7 @@ const Package1 = () => {
                 (
                     loading? <div>Fetching data ... pls wait</div>:
                     allPackage?.length === 0 ? <div>No data available, try adding packages</div>:
-                    newPackage?.map((e, index) => (
+                    allPackage?.map((e, index) => (
                         <div key={index} className="packageHold">
                 <div className="number">
                     <h1>{index + 1}</h1>
