@@ -154,12 +154,12 @@ const Header = () => {
                     <p className="text-gray-600">
                       Welcome to Asian Pacific Express!
                     </p>
-                    <button
-                      onClick={handleProfileClick}
+                    {/* <button
+                      onClick={""}
                       className="bg-[#FF6600] text-white py-2 px-4 rounded-md w-full my-2"
                     >
                       Sign In
-                    </button>
+                    </button> */}
                     <p className="text-center my-2 text-gray-600">
                       Continue with:
                     </p>
