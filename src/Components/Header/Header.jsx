@@ -46,13 +46,13 @@ const Header = () => {
   };
 
   const handleAbout = () => {
-    setServicesHover(false);
-    setAboutHover(true);
+    // setServicesHover(false);
+    // setAboutHover(true);
     navigate("/company");
   };
   const handleService = () => {
-    setAboutHover(false);
-    setServicesHover(true);
+    // setAboutHover(false);
+    // setServicesHover(true);
     navigate("/offshore");
   };
   const handleNav = (val) => {
@@ -69,45 +69,29 @@ const Header = () => {
     navigate("/track");
   };
 
-  const handleoogle = () => {
-    // const url = "https://asianpacificexpress-api.onrender.com/auth/google/success"
-    return(
-      <a href={url}></a>
-    )
-  }
+  useEffect(() => {
+    const handleAuthentication = async () => {
+      try {
+        const response = await axios.get(
+          "https://asianpacificexpress-api.onrender.com/auth/user"
+        );
+        console.log(response);
+        
+        if (response.data) {
+          const user = response.data;
+          localStorage.setItem('user', JSON.stringify(user));
+        }
+      } catch (error) {
+        console.error("Error during authentication:", error.message);
+      }
+    };
 
-  // useEffect(() => {
-  //   const handleAuthentication = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         "https://asianpacificexpress-api.onrender.com/auth/google/success",
-  //         {
-  //           withCredentials: true, // Important for cookie-based authentication
-  //         }
-  //       );
+    const timer = setTimeout(() => {
+      handleAuthentication();
+    }, 10000);
 
-  //       if (response.data && response.data.data) {
-  //         // Assuming the user data is in response.data.data
-  //         const user = response.data.data;
-
-  //         // Store user data in local storage or a context
-  //         localStorage.setItem("user", JSON.stringify(user));
-  //         setUserprofilePicture(user.profilePicture.url);
-
-  //         // Redirect to the homepage
-  //         navigate("/"); // Change to your actual homepage route
-  //       } else {
-  //         // Redirect to login page on failure
-  //         navigate("/login"); // Adjust this route as necessary
-  //       }
-  //     } catch (error) {
-  //       console.error("Error during authentication:", error.message);
-  //       navigate("/login"); // Redirect to login page on error
-  //     }
-  //   };
-
-  //   handleAuthentication();
-  // }, [navigate]);
+    return () => clearTimeout(timer); 
+  }, []);
 
   return (
     <>
@@ -167,7 +151,7 @@ const Header = () => {
                 {showDropdown && (
                   <div
                     ref={dropdownRef}
-                    className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-50"
+                    className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-[99]"
                     onMouseDown={handleMouseDown}
                     style={{ cursor: "move" }}
                   >
@@ -205,6 +189,15 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+
 
 // import { useEffect, useRef, useState } from "react";
 // import { HiOutlineMenuAlt4 } from "react-icons/hi";

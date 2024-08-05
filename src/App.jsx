@@ -11,6 +11,7 @@ import Track from "./Pages/Track/Track";
 import Company from "./Pages/About/Company";
 import OffshoreIntake from "./Pages/ourServices/OffshoreIntake";
 import ContactUs from "./Pages/Contact/ContactUs";
+import ClientLogin from "./Auth/Login/ClientLogin";
 
 const route = createHashRouter([
   {
@@ -42,6 +43,10 @@ const route = createHashRouter([
   {
     path: "/adminlogin",
     element: <Login />,
+  },
+  {
+    path: "/login",
+    element: <ClientLogin />,
   },
   {
     path: "allpackage",
