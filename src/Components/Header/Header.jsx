@@ -46,13 +46,9 @@ const Header = () => {
   };
 
   const handleAbout = () => {
-    // setServicesHover(false);
-    // setAboutHover(true);
     navigate("/company");
   };
   const handleService = () => {
-    // setAboutHover(false);
-    // setServicesHover(true);
     navigate("/offshore");
   };
   const handleNav = (val) => {
@@ -76,10 +72,10 @@ const Header = () => {
           "https://asianpacificexpress-api.onrender.com/auth/user"
         );
         console.log(response);
-        
+
         if (response.data) {
           const user = response.data;
-          localStorage.setItem('user', JSON.stringify(user));
+          localStorage.setItem("user", JSON.stringify(user));
         }
       } catch (error) {
         console.error("Error during authentication:", error.message);
@@ -90,7 +86,7 @@ const Header = () => {
       handleAuthentication();
     }, 10000);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -158,9 +154,16 @@ const Header = () => {
                     <p className="text-gray-600">
                       Welcome to Asian Pacific Express!
                     </p>
+                    <button
+                      onClick={handleProfileClick}
+                      className="bg-[#FF6600] text-white py-2 px-4 rounded-md w-full my-2"
+                    >
+                      Sign In
+                    </button>
                     <p className="text-center my-2 text-gray-600">
                       Continue with:
                     </p>
+
                     <div className="flex justify-center space-x-4 my-2">
                       <div>
                         <FaGoogle className="cursor-pointer text-xl text-gray-700" />
