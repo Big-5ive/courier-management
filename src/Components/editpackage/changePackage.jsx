@@ -4,7 +4,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const EditPackageCont = ({close, pacid}) => {
+const EditPackageCont = ({close, pacid, fetchpack}) => {
 
   const [shippingDate, setShippingDate] = useState("")
   const [sendersName, setSendersName] = useState("")
@@ -68,6 +68,7 @@ const EditPackageCont = ({close, pacid}) => {
         toast.success("package updated added")
         setLoading(false)
         handleClose()
+        fetchpack()
       } catch (error) {
         // console.error('Error:', error);
         // console.error('id:', id);

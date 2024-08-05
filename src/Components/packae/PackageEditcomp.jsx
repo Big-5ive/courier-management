@@ -41,14 +41,15 @@ const Package1 = () => {
         // setEditValue(value)
         setDeleteOption(value)
     }
-    useEffect(() => {
-        const url = " https://asianpacificexpress-api.onrender.com/view-all-package"
-        const admin = JSON.parse(localStorage.getItem("admindata"))
-        const token = admin.token
-        const headers = {
-        'Authorization' : `Bearer ${token}`
-        }
+    // useEffect(() => {
+        
         const fetchData = async () => {
+            const url = " https://asianpacificexpress-api.onrender.com/view-all-package"
+            const admin = JSON.parse(localStorage.getItem("admindata"))
+            const token = admin.token
+            const headers = {
+            'Authorization' : `Bearer ${token}`
+            }
             setLoading(true)
           try {
             const response = await axios.get(url, { headers });
@@ -65,8 +66,11 @@ const Package1 = () => {
           }
         };
     
+        
+    //   }, []);
+    useEffect(()=> {
         fetchData();
-      }, []);
+    }, [])
 
     //   const newPackage = [...allPackage]?.reverse()
     //   console.log("pack",allPackage)
@@ -77,7 +81,7 @@ const Package1 = () => {
             {
                 editPackage ? 
                 <div className="editpackageholder">
-                    <EditPackageCont pacid={editId} close={handleEditPackage}/>
+                    <EditPackageCont fetchpack={fetchData} pacid={editId} close={handleEditPackage}/>
                 </div> : 
                 packageDetail ? 
                 <div className="editpackageholder">
@@ -85,7 +89,7 @@ const Package1 = () => {
                  </div> :
                  deleteOption ? 
                  <div className="editpackageholder">
-                    <DeletePackagecont chip={deleteId} close={handleDeletePackage} />
+                    <DeletePackagecont fetchpack={fetchData} chip={deleteId} close={handleDeletePackage} />
                  </div> :
                 (
                     loading? <div>Fetching data ... pls wait</div>:
