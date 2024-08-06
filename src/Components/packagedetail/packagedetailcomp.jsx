@@ -71,8 +71,8 @@ const PackageDetail = ({detail, single }) => {
             </div>
             <div className="detailbodyinfo">
                 <div>
-                    <h1>Dimensions</h1>
-                    <p>{single.dimensions}</p>
+                    <h1>Weight</h1>
+                    <p>{single.weight}</p>
                 </div>
                 <div>
                     <h1>Shipment status</h1>

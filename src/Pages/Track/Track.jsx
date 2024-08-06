@@ -18,7 +18,7 @@ const headers = [
   "Receiver's Postal Code",
   "Receiver's Country",
   "Description",
-  "Dimensions",
+  "Weight",
   "Shipment Status",
   "Tracking ID",
   "Parcel Code",
@@ -147,7 +147,7 @@ const Track = () => {
                       {packageDetails.description}
                     </td>
                     <td className="whitespace-nowrap px-3 py-5 text-center text-sm text-gray-700">
-                      {packageDetails.dimensions}
+                      {packageDetails.weight}
                     </td>
                     <td className="whitespace-nowrap px-3 py-5 text-center text-sm text-gray-700">
                       {packageDetails.shipmentStatus}

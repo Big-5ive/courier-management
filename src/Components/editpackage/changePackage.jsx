@@ -54,7 +54,7 @@ const EditPackageCont = ({close, pacid, fetchpack}) => {
         receiversPostalCode: postalCode,
         receiversCountry: country,
         description: contentDescription,
-        dimensions: dimensions,
+        weight: dimensions,
         shipmentStatus: shipmentStatus,
         shippingCondition: shipmentCondition,
         trackingId: trackingId,
@@ -193,9 +193,9 @@ const EditPackageCont = ({close, pacid, fetchpack}) => {
         </div>
         <div className="packageinputHold">
           <div className='newpackinput'>
-            <p style={{fontWeight: "600"}}>Dimensions</p>
+            <p style={{fontWeight: "600"}}>Weight</p>
             <input type="text" 
-            placeholder={pacid.dimensions}
+            placeholder={pacid.weight}
             value={dimensions}
             onChange={(e)=> setDimensions(e.target.value)}
             />
