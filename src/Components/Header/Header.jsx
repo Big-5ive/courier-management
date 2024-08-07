@@ -106,11 +106,12 @@ const Header = () => {
       }
     };
 
-    const timer = setTimeout(() => {
-      handleAuthentication();
-    }, 10000);
+    // const timer = setTimeout(() => {
+    //   handleAuthentication();
+    // }, 10000);
 
-    return () => clearTimeout(timer);
+    // return () => clearTimeout(timer);
+    handleAuthentication();
   }, [token]);
 
   return (
@@ -162,8 +163,8 @@ const Header = () => {
                     src={userprofilePicture}
                     alt=""
                     className="cursor-pointer rounded-full"
-                    width={30}
-                    height={30}
+                    width={50}
+                    height={50}
                   />
                 ) : (
                   <FaUser className="text-[#FF6600] cursor-pointer" size={24} />
