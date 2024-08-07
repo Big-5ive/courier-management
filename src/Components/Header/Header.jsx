@@ -5,6 +5,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { FaUser, FaGoogle, FaTwitter } from "react-icons/fa";
 import "../../Style/header.css";
 import axios from "axios";
+import { TbToolsKitchen2Off } from "react-icons/tb";
+import { MdLogout } from "react-icons/md";
 
 const Header = () => {
   const [menuPop, setMenuPop] = useState(false);
@@ -14,6 +16,9 @@ const Header = () => {
   const dropdownRef = useRef(null);
   const timeoutRef = useRef(null);
   const [userprofilePicture, setUserprofilePicture] = useState(null);
+  const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get("token");
+  console.log(token);
 
   const handleMouseDown = (e) => {
     const dropdown = dropdownRef.current;
@@ -65,17 +70,36 @@ const Header = () => {
     navigate("/track");
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("personInfo");
+    window.location.href =
+      "https://asianpacificexpress-api.onrender.com/logout";
+  };
+
   useEffect(() => {
+    const userData = JSON.parse(localStorage.getItem("personInfo"));
+
+    if (userData) {
+      setUserprofilePicture(userData?.profilePicture.url);
+    }
+    if (!token) {
+      return;
+    }
     const handleAuthentication = async () => {
       try {
         const response = await axios.get(
-          "https://asianpacificexpress-api.onrender.com/auth/user"
+          "https://asianpacificexpress-api.onrender.com/auth/user",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
-        console.log(response);
-
-        if (response.data) {
-          const user = response.data;
-          localStorage.setItem("user", JSON.stringify(user));
+        if (response.data && response.data.data) {
+          const user = response.data.data;
+          console.log(user);
+          localStorage.setItem("personInfo", JSON.stringify(user));
+          setUserprofilePicture(user.profilePicture.url);
         }
       } catch (error) {
         console.error("Error during authentication:", error.message);
@@ -87,7 +111,7 @@ const Header = () => {
     }, 10000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [token]);
 
   return (
     <>
@@ -136,48 +160,50 @@ const Header = () => {
                 {userprofilePicture ? (
                   <img
                     src={userprofilePicture}
-                    alt="User"
+                    alt=""
                     className="cursor-pointer rounded-full"
-                    width={24}
-                    height={24}
+                    width={30}
+                    height={30}
                   />
                 ) : (
                   <FaUser className="text-[#FF6600] cursor-pointer" size={24} />
                 )}
-                {showDropdown && (
-                  <div
-                    ref={dropdownRef}
-                    className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-[99]"
-                    onMouseDown={handleMouseDown}
-                    style={{ cursor: "move" }}
-                  >
-                    <p className="text-gray-600">
-                      Welcome to Asian Pacific Express!
-                    </p>
-                    <button
-                      onClick={handleProfileClick}
-                      className="bg-[#FF6600] text-white py-2 px-4 rounded-md w-full my-2"
+                {showDropdown &&
+                  (userprofilePicture ? (
+                    <div
+                      ref={dropdownRef}
+                      className="absolute right-0 mt-2 w-max bg-white border rounded-lg shadow-lg p-3 z-[99] cursor-pointer"
+                      onClick={handleLogout}
                     >
-                      Sign In
-                    </button>
-                    <p className="text-center my-2 text-gray-600">
-                      Continue with:
-                    </p>
-
-                    <div className="flex justify-center space-x-4 my-2">
-                      <a href="https://asianpacificexpress-api.onrender.com/googlelogin">
-                        <FaGoogle className="cursor-pointer text-xl text-gray-700" />
-                      </a>
-                      <FaTwitter className="cursor-pointer text-xl text-gray-700" />
+                      <div className="text-gray-600 flex gap-2 items-center"> <MdLogout />Logout</div>
                     </div>
-                    <p className="text-xs text-gray-500 text-center mt-2">
-                      By signing in via social media, I agree to the Asian
-                      Pacific Express Free Membership Agreement and Privacy
-                      Policy, and to receive emails about the platform’s
-                      products and services.
-                    </p>
-                  </div>
-                )}
+                  ) : (
+                    <div
+                      ref={dropdownRef}
+                      className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg p-4 z-[99]"
+                      onMouseDown={handleMouseDown}
+                      style={{ cursor: "move" }}
+                    >
+                      <p className="text-gray-600">
+                        Welcome to Asian Pacific Express!
+                      </p>
+                      <p className="text-center my-2 text-gray-600">
+                        Continue with:
+                      </p>
+                      <div className="flex justify-center space-x-4 my-2">
+                        <a href="https://asianpacificexpress-api.onrender.com/googlelogin">
+                          <FaGoogle className="cursor-pointer text-xl text-gray-700" />
+                        </a>
+                        <FaTwitter className="cursor-pointer text-xl text-gray-700" />
+                      </div>
+                      <p className="text-xs text-gray-500 text-center mt-2">
+                        By signing in via social media, I agree to the Asian
+                        Pacific Express Free Membership Agreement and Privacy
+                        Policy, and to receive emails about the platform’s
+                        products and services.
+                      </p>
+                    </div>
+                  ))}
               </div>
             </div>
             <div className="HeaderMenu" onClick={() => setMenuPop(true)}>

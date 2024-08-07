@@ -17,7 +17,7 @@ const OffshoreIntake = () => {
           </div>
           <img src="./ship.jpg" alt="Ship" />
         </div>
-        <main className="main">
+        <main className="main mt-5">
           <div className="writeupwrap">
             <div className="writeup">
               At Asian Pacific Express, we offer a wide range of delivery
