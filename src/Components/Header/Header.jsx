@@ -199,7 +199,10 @@ const Header = () => {
                         <a href="https://asianpacificexpress-api.onrender.com/googlelogin">
                           <FaGoogle className="cursor-pointer text-xl text-gray-700" />
                         </a>
+                        <a href="https://asianpacificexpress-api.onrender.com/twitterlogin">
                         <FaTwitter className="cursor-pointer text-xl text-gray-700" />
+                        </a>
+                        
                       </div>
                       <p className="text-xs text-gray-500 text-center mt-2">
                         By signing in via social media, I agree to the Asian
