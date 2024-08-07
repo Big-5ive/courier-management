@@ -4,7 +4,7 @@ import './deletepackage.css'
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const DeletePackagecont = ({close, chip}) => {
+const DeletePackagecont = ({close, chip, fetchpack}) => {
     const [loading, setLoading] = useState(false)
     const handleClose = () => {
         close(false)
@@ -27,6 +27,7 @@ const DeletePackagecont = ({close, chip}) => {
           toast.success("package deleted successfully")
           setLoading(false)
           handleClose()
+          fetchpack()
         } catch (error) {
           console.error('Error:', error);
           // console.error('id:', id);

@@ -45,7 +45,7 @@ const NewPackage = () => {
       receiversPostalCode: postalCode,
       receiversCountry: country,
       description: contentDescription,
-      dimensions: dimensions,
+      weight: dimensions,
       shipmentStatus: shipmentStatus,
       shippingCondition: shipmentCondition,
       trackingId: trackingId,
@@ -190,10 +190,10 @@ const NewPackage = () => {
         </div>
         <div className="packageinputHold">
           <div className='newpackinput'>
-            <p style={{fontWeight: "600"}}>Dimensions</p>
+            <p style={{fontWeight: "600"}}>Weight</p>
             <input 
             required
-            placeholder='eg lenght and breadth of the package'
+            placeholder='kg'
             value={dimensions}
             onChange={(e)=> setDimensions(e.target.value)}
             type="text" />
@@ -211,7 +211,7 @@ const NewPackage = () => {
             <p style={{fontWeight: "600"}}>Present shipping condition</p>
             <input 
             required
-            placeholder='eg cancelled, postponed e.t.c'
+            placeholder='write out the condition '
             value={shipmentCondition}
             onChange={(e)=> setShipmentCondition(e.target.value)}
             type="text" />

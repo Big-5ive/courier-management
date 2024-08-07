@@ -175,7 +175,11 @@ const Header = () => {
                       className="absolute right-0 mt-2 w-max bg-white border rounded-lg shadow-lg p-3 z-[99] cursor-pointer"
                       onClick={handleLogout}
                     >
-                      <div className="text-gray-600 flex gap-2 items-center"> <MdLogout />Logout</div>
+                      <div className="text-gray-600 flex gap-2 items-center">
+                        {" "}
+                        <MdLogout />
+                        Logout
+                      </div>
                     </div>
                   ) : (
                     <div

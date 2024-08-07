@@ -4,7 +4,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const EditPackageCont = ({close, pacid}) => {
+const EditPackageCont = ({close, pacid, fetchpack}) => {
 
   const [shippingDate, setShippingDate] = useState("")
   const [sendersName, setSendersName] = useState("")
@@ -54,7 +54,7 @@ const EditPackageCont = ({close, pacid}) => {
         receiversPostalCode: postalCode,
         receiversCountry: country,
         description: contentDescription,
-        dimensions: dimensions,
+        weight: dimensions,
         shipmentStatus: shipmentStatus,
         shippingCondition: shipmentCondition,
         trackingId: trackingId,
@@ -68,6 +68,7 @@ const EditPackageCont = ({close, pacid}) => {
         toast.success("package updated added")
         setLoading(false)
         handleClose()
+        fetchpack()
       } catch (error) {
         // console.error('Error:', error);
         // console.error('id:', id);
@@ -192,9 +193,9 @@ const EditPackageCont = ({close, pacid}) => {
         </div>
         <div className="packageinputHold">
           <div className='newpackinput'>
-            <p style={{fontWeight: "600"}}>Dimensions</p>
+            <p style={{fontWeight: "600"}}>Weight</p>
             <input type="text" 
-            placeholder={pacid.dimensions}
+            placeholder={pacid.weight}
             value={dimensions}
             onChange={(e)=> setDimensions(e.target.value)}
             />

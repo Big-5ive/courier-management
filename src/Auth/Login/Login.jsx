@@ -35,7 +35,7 @@ const Login = () => {
         setLoading(false);
         nav("/allpackage");
       } catch (error) {
-        //   console.error('Error:', error);
+          console.error('Error:', error);
         toast.error(error.response.data.message);
         setLoading(false);
       }

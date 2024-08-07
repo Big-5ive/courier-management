@@ -20,7 +20,7 @@ const Storage = () => {
                     </div>
                     <div className="storagewrite">
                         <div className="write">
-                            <h1 style={{fontSize: "20px"}}>358 East Daming Road Shanghai, Shanghai 200080. China</h1>
+                            <h1 style={{fontSize: "20px"}}>117 Seongchang Bldg jung-gu Seol KR, South Korea</h1>
                             <p>
                             At Asian Pacific Express, we understand the importance of both availability and scalability in delivering exceptional service. Our commitment to these principles ensures that we meet your needs effectively, no matter how dynamic or demanding your requirements may be.
                             </p>

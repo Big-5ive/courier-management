@@ -13,7 +13,7 @@ const Footer = () => {
               <a href="/#/company" className="footer__content--text">
                 Who We Are
               </a>
-              <a href="/#/company" className="footer__content--text">
+              <a href="/#/offshore" className="footer__content--text">
                 What we Do
               </a>
               {/* <a href="/whoWeAre" className="footer__content--text">Who We Are</a> */}
@@ -43,7 +43,14 @@ const Footer = () => {
             <div className="footer__title">Support</div>
             <div className="footer__content">
               <a href="/#/contact" className="footer__content--text">
-                Contact Us
+                support@asianpacificexpress.com
+              </a>
+              <a href="/#/contact" className="footer__content--text">
+                
+                117 Seongchang Bldg jung-gu Seol KR, South Korea
+              </a>
+              <a href="/#/contact" className="footer__content--text">
+                +82 1577-0484
               </a>
               {/* <p className="footer__content--text">Terms And conditions</p> */}
             </div>

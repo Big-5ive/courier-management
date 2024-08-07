@@ -6,6 +6,7 @@ import { FaBorderAll } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import { TbStatusChange } from "react-icons/tb";
 import { SlLogout } from "react-icons/sl";
+import { GrUserAdmin } from "react-icons/gr";
 
 const Home = ({props, one, two, three, name}) => {
   const [burgerMenu, setBurgerMenu] = useState(false)
@@ -20,7 +21,8 @@ const Home = ({props, one, two, three, name}) => {
       <div className="adminhold">
         <div className="adminHead">
           <div className="headloggo">
-            Asian express admin
+            <GrUserAdmin color='orangered' fontSize={"30px"}/>
+            <p>Admin</p>
           </div>
           <div className="headnav">
             {/* {name} */}
@@ -68,7 +70,7 @@ const Home = ({props, one, two, three, name}) => {
               <TbStatusChange />
               <p>Change user ststus</p>
             </div>
-            <div className="menulog">
+            <div className="menulog" onClick={handleLogOut}>
               <SlLogout />
               <p>Log out</p>
             </div>

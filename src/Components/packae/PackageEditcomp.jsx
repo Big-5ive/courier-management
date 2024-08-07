@@ -11,7 +11,7 @@ const Package1 = () => {
     const [editPackage, setEditPackage] = useState(false)
     const [deleteOption, setDeleteOption] = useState(false)
     const [packageDetail, setPackageDetail] = useState(false)
-    const [allPackage, setAllpackage] = useState()
+    const [allPackage, setAllpackage] = useState([])
     const [loading, setLoading] = useState(false)
     const [singlePackage, setSinglePackage] = useState()
     const [editId, setEditId] = useState()
@@ -41,20 +41,24 @@ const Package1 = () => {
         // setEditValue(value)
         setDeleteOption(value)
     }
-    useEffect(() => {
-        const url = " https://asianpacificexpress-api.onrender.com/view-all-package"
-        const admin = JSON.parse(localStorage.getItem("admindata"))
-        const token = admin.token
-        const headers = {
-        'Authorization' : `Bearer ${token}`
-        }
+    // useEffect(() => {
+        
         const fetchData = async () => {
+            const url = " https://asianpacificexpress-api.onrender.com/view-all-package"
+            const admin = JSON.parse(localStorage.getItem("admindata"))
+            const token = admin.token
+            const headers = {
+            'Authorization' : `Bearer ${token}`
+            }
             setLoading(true)
           try {
             const response = await axios.get(url, { headers });
             // setData(response.data);
             // console.log(response)
-            setAllpackage(response?.data.data)
+            const incommingData = (response?.data.data)
+            const newdata = [...incommingData].reverse()
+            setAllpackage(newdata)
+
             setLoading(false)
           } catch (error) {
             // console.log(error);
@@ -62,10 +66,14 @@ const Package1 = () => {
           }
         };
     
+        
+    //   }, []);
+    useEffect(()=> {
         fetchData();
-      }, []);
+    }, [])
 
-      const newPackage = [...allPackage].reverse()
+    //   const newPackage = [...allPackage]?.reverse()
+    //   console.log("pack",allPackage)
   return (
     <div className='packageParent'>
         <div className="allpackagehold">
@@ -73,7 +81,7 @@ const Package1 = () => {
             {
                 editPackage ? 
                 <div className="editpackageholder">
-                    <EditPackageCont pacid={editId} close={handleEditPackage}/>
+                    <EditPackageCont fetchpack={fetchData} pacid={editId} close={handleEditPackage}/>
                 </div> : 
                 packageDetail ? 
                 <div className="editpackageholder">
@@ -81,12 +89,12 @@ const Package1 = () => {
                  </div> :
                  deleteOption ? 
                  <div className="editpackageholder">
-                    <DeletePackagecont chip={deleteId} close={handleDeletePackage} />
+                    <DeletePackagecont fetchpack={fetchData} chip={deleteId} close={handleDeletePackage} />
                  </div> :
                 (
                     loading? <div>Fetching data ... pls wait</div>:
                     allPackage?.length === 0 ? <div>No data available, try adding packages</div>:
-                    newPackage?.map((e, index) => (
+                    allPackage?.map((e, index) => (
                         <div key={index} className="packageHold">
                 <div className="number">
                     <h1>{index + 1}</h1>
