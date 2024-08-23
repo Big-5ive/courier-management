@@ -70,7 +70,7 @@ const Header = () => {
     navigate("/track");
   };
 
-  const handleLogout = () => {
+  const handleLogout = () => {  
     localStorage.removeItem("personInfo");
     window.location.href =
       "https://asianpacificexpress-api.onrender.com/logout";
